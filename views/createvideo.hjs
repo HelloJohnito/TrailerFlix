@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>Create Video</h1>
+
+    <form class="" action="/api/video" method="post">
+      <input type="text" name="name" placeholder="Name"/>
+      <input type="text" name="youtube_id" placeholder="youtube_id"/>
+      <input type="text" name="description" placeholder="description"/>
+      <input type="text" name="category" placeholder="category"/>
+      <input type="number" name="rating" placeholder="rating"/>
+
+      <input type="submit" value="Create Video"/>
+    </form>
+
+  </body>
+</html>
