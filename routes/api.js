@@ -3,6 +3,7 @@ var router = express.Router();
 var VideoController = require('../controllers/videoController');
 var Controllers = require("../controllers");
 
+
 router.get('/:resource', function(req, res, next){
   var resource = req.params.resource;
   var controller = Controllers[resource];
@@ -12,6 +13,7 @@ router.get('/:resource', function(req, res, next){
       confirmation: 'fail',
       message: 'Invaild resource request: '+ resource
     });
+    return;
   }
 
   controller.find(req.query, function(err, results){
@@ -29,6 +31,7 @@ router.get('/:resource', function(req, res, next){
   });
 });
 
+
 router.get('/:resource/:category', function(req, res, next){
   var resource = req.params.resource;
   var category = req.params.category;
@@ -39,6 +42,7 @@ router.get('/:resource/:category', function(req, res, next){
       confirmation: 'fail',
       message: 'Invaild resource request: '+ resource
     });
+    return;
   }
 
   controller.find({category: category}, function(err, results){
@@ -67,6 +71,7 @@ router.get('/:resource/:category/:id', function(req, res, next){
       confirmation: 'fail',
       message: 'Invaild resource request: '+ resource
     });
+    return;
   }
 
   controller.findById(id, function(err, result){
@@ -84,6 +89,7 @@ router.get('/:resource/:category/:id', function(req, res, next){
   });
 });
 
+
 router.post('/:resource', function(req,res,next){
   var resource = req.params.resource;
   var controller = Controllers[resource];
@@ -93,6 +99,7 @@ router.post('/:resource', function(req,res,next){
       confirmation: 'fail',
       message: 'Invaild resource request: '+ resource
     });
+    return;
   }
 
   controller.create(req.body, function(err, result){
