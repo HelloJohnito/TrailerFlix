@@ -1,4 +1,4 @@
-var Video = require("../models/video");
+var Video = require('../models/video');
 
 module.exports = {
 

@@ -3,7 +3,7 @@ import * as APIUtil from '../utils/videoAPI';
 export const RECEIVE_ALL_VIDEOS = 'RECEIVE_ALL_VIDEOS';
 
 export const fetchAllVideos = request => dispatch => (
-  APIUtil.fetchAllVideos(request).then( response => dispatch(receiveAllVideos(response.data)))
+  APIUtil.fetchAllVideos(request).then( response => dispatch(receiveAllVideos(response.data.results)))
 );
 
 //response.data

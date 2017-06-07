@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
 var CategorySchema = new mongoose.Schema({
+  num: Number,
   action: [
     {
       type: mongoose.Schema.Types.ObjectId,
@@ -51,4 +52,4 @@ var CategorySchema = new mongoose.Schema({
   ]
 });
 
-module.export = mongoose.model('Category', CategorySchema);
+module.exports = mongoose.model('Category', CategorySchema);

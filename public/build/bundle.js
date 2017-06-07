@@ -8179,7 +8179,7 @@ var RECEIVE_ALL_VIDEOS = exports.RECEIVE_ALL_VIDEOS = 'RECEIVE_ALL_VIDEOS';
 var fetchAllVideos = exports.fetchAllVideos = function fetchAllVideos(request) {
   return function (dispatch) {
     return APIUtil.fetchAllVideos(request).then(function (response) {
-      return dispatch(receiveAllVideos(response));
+      return dispatch(receiveAllVideos(response.data.results));
     });
   };
 };
@@ -13949,9 +13949,14 @@ var _axios2 = _interopRequireDefault(_axios);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var fetchAllVideos = exports.fetchAllVideos = function fetchAllVideos(request) {
+  // return axios({
+  //   method: 'get',
+  //   url: '/api/video',
+  //   params: request
+  // });
   return (0, _axios2.default)({
     method: 'get',
-    url: '/api/video',
+    url: '/api/category',
     params: request
   });
 };

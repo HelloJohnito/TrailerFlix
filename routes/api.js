@@ -25,7 +25,8 @@ router.get('/:resource', function(req, res, next){
       });
       return;
     }
-    console.log(results) //try to make this into an object
+    // console.log('----------results----------')
+    // console.log(results) //try to make this into an object
     res.json({
       confirmation: 'success',
       results: results
