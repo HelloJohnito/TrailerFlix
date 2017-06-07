@@ -13764,6 +13764,7 @@ var _videoIndex2 = _interopRequireDefault(_videoIndex);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
+
   return {
     video: state.videos
   };
@@ -13796,6 +13797,10 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _videoItem = __webpack_require__(296);
+
+var _videoItem2 = _interopRequireDefault(_videoItem);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13821,11 +13826,170 @@ var VideoIndex = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      console.log(this.props);
+
+      if (!this.props.video.num) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          'loading'
+        );
+      }
+
       return _react2.default.createElement(
         'div',
         null,
-        'testing'
+        _react2.default.createElement(
+          'div',
+          null,
+          'Action'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.action.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Comedy'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.comedy.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Documentary'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.documentary.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Family'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.family.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Fantasy'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.fantasy.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Horror'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.horror.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Mystery'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.mystery.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Romance'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.video.romance.map(function (video, idx) {
+            return _react2.default.createElement(_videoItem2.default, {
+              key: idx,
+              name: video.name,
+              youtubeId: video.youtube_id,
+              img: video.img,
+              description: video.description,
+              rating: video.rating
+            });
+          })
+        )
       );
     }
   }]);
@@ -13873,18 +14037,18 @@ Object.defineProperty(exports, "__esModule", {
 
 var _videoAction = __webpack_require__(72);
 
-var initialState = {
-  name: "",
-  youtube_id: "",
-  desciption: "",
-  rating: "",
-  category: "",
-  releaseDate: "",
-  comments: []
-};
+// const initialState = {
+//   name: "",
+//   youtube_id: "",
+//   desciption: "",
+//   rating: "",
+//   category: "",
+//   releaseDate: "",
+//   comments: []
+// };
 
 var VideoReducer = function VideoReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments[1];
 
   Object.freeze(state);
@@ -29402,6 +29566,44 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 295 */,
+/* 296 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function videoItem(props) {
+  console.log(props);
+  return _react2.default.createElement(
+    'li',
+    null,
+    _react2.default.createElement(
+      'div',
+      null,
+      props.name
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      props.description
+    )
+  );
+}
+
+exports.default = videoItem;
 
 /***/ })
 /******/ ]);

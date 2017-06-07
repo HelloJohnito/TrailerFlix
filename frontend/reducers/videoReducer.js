@@ -1,16 +1,16 @@
 import { RECEIVE_ALL_VIDEOS } from '../actions/videoAction';
 
-const initialState = {
-  name: "",
-  youtube_id: "",
-  desciption: "",
-  rating: "",
-  category: "",
-  releaseDate: "",
-  comments: []
-};
+// const initialState = {
+//   name: "",
+//   youtube_id: "",
+//   desciption: "",
+//   rating: "",
+//   category: "",
+//   releaseDate: "",
+//   comments: []
+// };
 
-const VideoReducer = (state = initialState, action) => {
+const VideoReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type){
     case RECEIVE_ALL_VIDEOS:

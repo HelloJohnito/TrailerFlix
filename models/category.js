@@ -38,7 +38,7 @@ var CategorySchema = new mongoose.Schema({
       ref: 'Video'
     }
   ],
-  familyFilm: [
+  family: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Video'

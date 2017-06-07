@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //creates the mongodb
-var db = "mongodb://localhost/trailerFlix";
+var db = "mongodb://localhost/TrailerFlix";
 mongoose.connect(db, function(err, res){
   if(err){
     console.log("DB Connection Failed");
@@ -29,7 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
 
 //seed the database
-// seed();
+seed();
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
