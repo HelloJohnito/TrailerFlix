@@ -49,7 +49,6 @@ module.exports = {
         callback(err, null);
         return;
       }
-
       callback(null, null);
     });
   }

@@ -5,6 +5,7 @@ var Controllers = require("../controllers");
 
 
 router.get('/:resource', function(req, res, next){
+  //use req.query for data send down from utilAPi
   var resource = req.params.resource;
   var controller = Controllers[resource];
 
@@ -24,6 +25,7 @@ router.get('/:resource', function(req, res, next){
       });
       return;
     }
+    console.log(results) //try to make this into an object
     res.json({
       confirmation: 'success',
       results: results

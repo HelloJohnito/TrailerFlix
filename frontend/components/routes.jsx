@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 
-import VideoIndex from './video/videoIndex';
+import VideoContainer from './video/videoContainer';
 
 
 class Routes extends Component {
@@ -14,8 +14,8 @@ class Routes extends Component {
     return(
       <div>
         <Switch>
-          <Route exact path='/' component={ VideoIndex }/>
-          <Route path="/videos" component={ VideoIndex }/>
+          <Route exact path='/' component={ VideoContainer }/>
+          <Route path="/video" component={ VideoContainer }/>
         </Switch>
       </div>
     );

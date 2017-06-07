@@ -6,10 +6,15 @@ class VideoIndex extends Component{
     super(props);
   }
 
+  componentDidMount(){
+    this.props.fetchAllVideos();
+  }
+
   render(){
+    console.log(this.props);
     return(
       <div>
-        hi
+        testing
       </div>
     );
   }
