@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/trailerFlex.jsx",
+  entry: "./frontend/trailerFlix.jsx",
   output: {
     path: path.resolve(__dirname, 'public', 'build'),
     filename: "bundle.js"

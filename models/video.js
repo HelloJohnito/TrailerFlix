@@ -6,6 +6,7 @@ var VideoSchema = new mongoose.Schema({
   description: {type: String, default: ""},
   rating: {type: Number, required: true},
   category: {type: String, required: true},
+  releaseDate: {type: Date},
   comments: [
     {
       type: mongoose.Schema.Types.ObjectId,
