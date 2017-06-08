@@ -11,7 +11,6 @@ class VideoIndex extends Component{
   }
 
   render(){
-
     if(!this.props.video.num){
       return <div>loading</div>;
     }

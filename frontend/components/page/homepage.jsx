@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 
 class HomePage extends Component{
@@ -6,6 +7,10 @@ class HomePage extends Component{
     super(props);
   }
 
+  navigateToVideo(e) {
+    e.preventDefault();
+    this.props.history.push('/video');
+  }
 
   render(){
     return(
@@ -22,7 +27,7 @@ class HomePage extends Component{
                 <div className="splash-title">
                   <h3 className="">Watch All</h3>
                   <h3 className="">Movie Trailers!</h3>
-                  <button>Watch Now</button>
+                  <button onClick={this.navigateToVideo.bind(this)}>Watch Now</button>
                 </div>
               </div>
             </div>
