@@ -1,1 +1,13 @@
+.flex{
+  display: flex;
+}
 
+.flex-horizontal{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-vertical{
+  display: flex;
+  align-items: center;
+}

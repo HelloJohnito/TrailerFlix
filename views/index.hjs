@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trailer Flex</title>
+    <title>TrailerFlix</title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/homepage.css' />
     <script src="/build/bundle.js"></script>
   </head>
   <body>
