@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './page/homepage';
-import VideoContainer from './video/videoContainer';
+import IndexPage from './page/indexpage';
 
 
 
@@ -16,7 +16,7 @@ class Routes extends Component {
       <div>
         <Switch>
           <Route exact path='/' component={ HomePage }/>
-          <Route path="/video" component={ VideoContainer }/>
+          <Route path="/video" component={ IndexPage }/>
         </Switch>
       </div>
     );

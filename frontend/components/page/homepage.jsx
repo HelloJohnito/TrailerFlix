@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import Navbar from '../display/nav';
 
 
 class HomePage extends Component{
@@ -17,10 +18,7 @@ class HomePage extends Component{
       <div className="splash-container">
         <div className="splash-image">
           <div className="splash-gradient">
-            <nav className="splash-nav flex">
-              <h1 className="splash-logo">TrailerFlix</h1>
-              <button className="splash-signup splash-button">Sign up</button>
-            </nav>
+            <Navbar/>
 
             <div className="splash-outer-container-title flex-horizontal">
               <div className="splash-inner-container-title flex-vertical">
