@@ -1,0 +1,46 @@
+.video-category-container{
+  display: flex;
+}
+
+.video-thumbnail{
+  background: black;
+  border: 1px solid black;
+  position: relative;
+}
+
+.video-img{
+  width: 290px;
+  height: 400px;
+}
+
+.video-thumbnail:hover img{
+  transition: all .5s ease-in-out;
+  transform: scale(1.1);
+  filter: brightness(.5);
+  width: 290px;
+  height: 400px;
+}
+
+.video-title{
+  position: absolute;
+  color: #fff;
+  top: 140px;
+  left: 120px;
+  font-size: 15px;
+  opacity: 0;
+}
+
+.video-playbutton{
+  position: absolute;
+  color: #fff;
+  top: 180px;
+  left: 110px;
+  font-size: 15px;
+  opacity: 0;
+}
+
+.video-thumbnail:hover div{
+  transition: .6s ease-in;
+  opacity: 1;
+  z-index: 100;
+}

@@ -13945,7 +13945,7 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'ul',
-          null,
+          { className: 'video-category-container' },
           this.props.video.action.map(function (video, idx) {
             return _react2.default.createElement(_videoItem2.default, {
               key: idx,
@@ -14118,18 +14118,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function videoItem(props) {
   return _react2.default.createElement(
-    'li',
-    null,
+    "li",
+    { className: "video-thumbnail" },
     _react2.default.createElement(
-      'div',
-      null,
+      "div",
+      { className: "video-title" },
       props.name
     ),
     _react2.default.createElement(
-      'div',
-      null,
-      props.description
-    )
+      "div",
+      { className: "video-playbutton" },
+      "playbutton"
+    ),
+    _react2.default.createElement("img", { className: "video-img", src: props.img })
   );
 }
 

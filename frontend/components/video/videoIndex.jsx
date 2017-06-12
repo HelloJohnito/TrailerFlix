@@ -18,7 +18,7 @@ class VideoIndex extends Component{
     return(
       <div>
         <div>Action</div>
-          <ul>
+          <ul className="video-category-container">
             {this.props.video.action.map((video, idx) => (
               <VideoItem
                 key={idx}
