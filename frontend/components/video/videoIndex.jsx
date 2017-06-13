@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
 import VideoItem from './videoItem';
 
 class VideoIndex extends Component{
@@ -11,6 +12,13 @@ class VideoIndex extends Component{
   }
 
   render(){
+
+    var settings = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true
+    };
+
     if(!this.props.video.num){
       return <div>loading</div>;
     }
@@ -18,18 +26,18 @@ class VideoIndex extends Component{
     return(
       <div>
         <div>Action</div>
-          <ul className="video-category-container">
-            {this.props.video.action.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+            <ul className="video-category-container">
+              {this.props.video.action.map((video, idx) => (
+                <VideoItem
+                  key={idx}
+                  name={video.name}
+                  youtubeId={video.youtube_id}
+                  img={video.img}
+                  description={video.description}
+                  rating={video.rating}
+                  />
+              ))}
+            </ul>
 
         <div>Comedy</div>
 

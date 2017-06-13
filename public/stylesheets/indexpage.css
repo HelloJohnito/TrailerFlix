@@ -3,9 +3,12 @@
 }
 
 .video-thumbnail{
+  width: 290px;
+  height: 400px;
   background: black;
   border: 1px solid black;
   position: relative;
+  margin: 20px;
 }
 
 .video-img{
@@ -24,8 +27,9 @@
 .video-title{
   position: absolute;
   color: #fff;
-  top: 140px;
-  left: 120px;
+  width: 100%;
+  top: 35%;
+  text-align: center;
   font-size: 15px;
   opacity: 0;
 }

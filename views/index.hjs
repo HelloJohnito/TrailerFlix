@@ -2,10 +2,15 @@
 <html>
   <head>
     <title>TrailerFlix</title>
+
     <link rel='stylesheet' href='/stylesheets/reset.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <link rel='stylesheet' href='/stylesheets/slick.css' />
+
     <link rel='stylesheet' href='/stylesheets/homepage.css' />
     <link rel='stylesheet' href='/stylesheets/indexpage.css' />
+
     <script src="/build/bundle.js"></script>
   </head>
   <body>
