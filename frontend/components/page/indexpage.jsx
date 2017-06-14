@@ -10,7 +10,7 @@ class IndexPage extends Component {
 
   render(){
     return(
-      <div>
+      <div className="indexpage-container">
         <Navbar />
         <VideoContainer/>
       </div>

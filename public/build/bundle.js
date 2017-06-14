@@ -14568,7 +14568,7 @@ var IndexPage = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'indexpage-container' },
         _react2.default.createElement(_nav2.default, null),
         _react2.default.createElement(_videoContainer2.default, null)
       );
@@ -14751,12 +14751,12 @@ var VideoIndex = function (_Component) {
         null,
         _react2.default.createElement(
           'div',
-          null,
-          'Action'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Action'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14781,12 +14781,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Comedy'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Comedy'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14811,12 +14811,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Documentary'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Documentary'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14841,12 +14841,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Family'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Family'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14871,12 +14871,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Fantasy'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Fantasy'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14901,12 +14901,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Horror'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Horror'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14931,12 +14931,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Mystery'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Mystery'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,
@@ -14961,12 +14961,12 @@ var VideoIndex = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          null,
-          'Romance'
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'video-category-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'video-category-title' },
+            'Romance'
+          ),
           _react2.default.createElement(
             _reactSlick2.default,
             settings,

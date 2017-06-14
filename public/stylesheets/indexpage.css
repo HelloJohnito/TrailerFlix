@@ -1,13 +1,22 @@
+.indexpage-container{
+  background: #141414;
+  height: 100%;
+}
+
 .video-category-container{
   height: 400px;
-  margin: 20px 0;
+  margin: 75px 0;
+}
+
+.video-category-title{
+  color: #999;
 }
 
 .video-thumbnail{
   width: 290px;
   height: 400px;
-  background: black;
-  border: 1px solid black;
+  /*background: black;*/
+  /*border: 1px solid black;*/
   position: relative;
 }
 

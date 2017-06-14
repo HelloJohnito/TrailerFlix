@@ -24,8 +24,8 @@ class VideoIndex extends Component{
 
     return(
       <div>
-        <div>Action</div>
         <div className="video-category-container">
+          <div className="video-category-title">Action</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -37,8 +37,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Comedy</div>
         <div className="video-category-container">
+          <div className="video-category-title">Comedy</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -50,8 +50,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Documentary</div>
         <div className="video-category-container">
+          <div className="video-category-title">Documentary</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -63,8 +63,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Family</div>
         <div className="video-category-container">
+          <div className="video-category-title">Family</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -76,8 +76,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Fantasy</div>
         <div className="video-category-container">
+          <div className="video-category-title">Fantasy</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -89,8 +89,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Horror</div>
         <div className="video-category-container">
+          <div className="video-category-title">Horror</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -102,8 +102,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Mystery</div>
         <div className="video-category-container">
+          <div className="video-category-title">Mystery</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
@@ -115,8 +115,8 @@ class VideoIndex extends Component{
           </Slider>
         </div>
 
-        <div>Romance</div>
         <div className="video-category-container">
+          <div className="video-category-title">Romance</div>
           <Slider {...settings}>
           {this.props.video.action.map((video, idx) => (
             <div key={idx} className="video-thumbnail">
