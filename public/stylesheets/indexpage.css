@@ -27,7 +27,7 @@
   margin: auto;
 }
 
-.video-thumbnail:hover img{
+.video-thumbnail:hover .video-img{
   transition: all .1s ease-in-out;
   filter: brightness(.5);
 }
@@ -42,14 +42,28 @@
   opacity: 0;
 }
 
+.video-playbutton-link{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
 .video-playbutton{
   position: absolute;
-  color: #fff;
-  width: 100%;
-  top: 45%;
-  text-align: center;
-  font-size: 15px;
+  width: 60px;
   opacity: 0;
+}
+
+.video-thumbnail:hover .video-playbutton{
+  transition: .1s ease-in;
+  opacity: 1;
+  z-index: 100;
+}
+
+.video-playbutton:hover{
+  /*opacity: 0.4;*/
+  cursor: pointer;
 }
 
 .video-thumbnail:hover div{

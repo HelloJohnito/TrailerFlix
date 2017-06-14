@@ -14702,6 +14702,8 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(64);
+
 var _reactSlick = __webpack_require__(290);
 
 var _reactSlick2 = _interopRequireDefault(_reactSlick);
@@ -14770,9 +14772,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14800,9 +14802,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14830,9 +14832,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14860,9 +14862,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14890,9 +14892,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14920,9 +14922,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14950,9 +14952,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
@@ -14980,9 +14982,9 @@ var VideoIndex = function (_Component) {
                   video.name
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'video-playbutton' },
-                  'playbutton'
+                  _reactRouterDom.Link,
+                  { to: '', className: 'video-playbutton-link' },
+                  _react2.default.createElement('img', { src: 'http://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,h_100/v1497473078/playbutton_coznrx.png', className: 'video-playbutton', alt: 'play' })
                 ),
                 _react2.default.createElement('img', { className: 'video-img', src: video.img })
               );
