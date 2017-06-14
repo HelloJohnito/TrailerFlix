@@ -14,9 +14,8 @@ class VideoIndex extends Component{
   render(){
 
     var settings = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true
+      slidesToShow: 3,
+      slidesToScroll: 2,
     };
 
     if(!this.props.video.num){
@@ -26,118 +25,108 @@ class VideoIndex extends Component{
     return(
       <div>
         <div>Action</div>
-            <ul className="video-category-container">
-              {this.props.video.action.map((video, idx) => (
-                <VideoItem
-                  key={idx}
-                  name={video.name}
-                  youtubeId={video.youtube_id}
-                  img={video.img}
-                  description={video.description}
-                  rating={video.rating}
-                  />
-              ))}
-            </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Comedy</div>
-
-          <ul>
-            {this.props.video.comedy.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Documentary</div>
-
-          <ul>
-            {this.props.video.documentary.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Family</div>
-          <ul>
-            {this.props.video.family.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Fantasy</div>
-          <ul>
-            {this.props.video.fantasy.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Horror</div>
-          <ul>
-            {this.props.video.horror.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Mystery</div>
-          <ul>
-            {this.props.video.mystery.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
         <div>Romance</div>
-          <ul>
-            {this.props.video.romance.map((video, idx) => (
-              <VideoItem
-                key={idx}
-                name={video.name}
-                youtubeId={video.youtube_id}
-                img={video.img}
-                description={video.description}
-                rating={video.rating}
-                />
-            ))}
-          </ul>
+        <div className="video-category-container">
+          <Slider {...settings}>
+          {this.props.video.action.map((video, idx) => (
+            <div key={idx} className="video-thumbnail">
+              <div className="video-title">{video.name}</div>
+              <div className="video-playbutton">playbutton</div>
+              <img className="video-img" src={video.img} />
+            </div>
+          ))}
+          </Slider>
+        </div>
 
       </div>
     );

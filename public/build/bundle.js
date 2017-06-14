@@ -14542,7 +14542,7 @@ var _nav = __webpack_require__(77);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _videoContainer = __webpack_require__(147);
+var _videoContainer = __webpack_require__(148);
 
 var _videoContainer2 = _interopRequireDefault(_videoContainer);
 
@@ -14648,7 +14648,8 @@ var Routes = function (_Component) {
 exports.default = Routes;
 
 /***/ }),
-/* 147 */
+/* 147 */,
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14662,11 +14663,13 @@ var _reactRedux = __webpack_require__(62);
 
 var _videoAction = __webpack_require__(76);
 
-var _videoIndex = __webpack_require__(148);
+var _videoIndex = __webpack_require__(321);
 
 var _videoIndex2 = _interopRequireDefault(_videoIndex);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import VideoIndex from './testing';
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
 
@@ -14684,235 +14687,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_videoIndex2.default);
-
-/***/ }),
-/* 148 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactSlick = __webpack_require__(291);
-
-var _reactSlick2 = _interopRequireDefault(_reactSlick);
-
-var _videoItem = __webpack_require__(149);
-
-var _videoItem2 = _interopRequireDefault(_videoItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var VideoIndex = function (_Component) {
-  _inherits(VideoIndex, _Component);
-
-  function VideoIndex(props) {
-    _classCallCheck(this, VideoIndex);
-
-    return _possibleConstructorReturn(this, (VideoIndex.__proto__ || Object.getPrototypeOf(VideoIndex)).call(this, props));
-  }
-
-  _createClass(VideoIndex, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.props.fetchAllVideos();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-
-      var settings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
-      };
-
-      if (!this.props.video.num) {
-        return _react2.default.createElement(
-          'div',
-          null,
-          'loading'
-        );
-      }
-
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          null,
-          'Action'
-        ),
-        _react2.default.createElement(
-          'ul',
-          { className: 'video-category-container' },
-          this.props.video.action.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Comedy'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.comedy.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Documentary'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.documentary.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Family'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.family.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Fantasy'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.fantasy.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Horror'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.horror.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Mystery'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.mystery.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Romance'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.props.video.romance.map(function (video, idx) {
-            return _react2.default.createElement(_videoItem2.default, {
-              key: idx,
-              name: video.name,
-              youtubeId: video.youtube_id,
-              img: video.img,
-              description: video.description,
-              rating: video.rating
-            });
-          })
-        )
-      );
-    }
-  }]);
-
-  return VideoIndex;
-}(_react.Component);
-
-exports.default = VideoIndex;
 
 /***/ }),
 /* 149 */
@@ -14933,7 +14707,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function videoItem(props) {
   return _react2.default.createElement(
-    "li",
+    "div",
     { className: "video-thumbnail" },
     _react2.default.createElement(
       "div",
@@ -32915,6 +32689,322 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(291);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _videoItem = __webpack_require__(149);
+
+var _videoItem2 = _interopRequireDefault(_videoItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VideoIndex = function (_Component) {
+  _inherits(VideoIndex, _Component);
+
+  function VideoIndex(props) {
+    _classCallCheck(this, VideoIndex);
+
+    return _possibleConstructorReturn(this, (VideoIndex.__proto__ || Object.getPrototypeOf(VideoIndex)).call(this, props));
+  }
+
+  _createClass(VideoIndex, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.props.fetchAllVideos();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+
+      var settings = {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      };
+
+      if (!this.props.video.num) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          'loading'
+        );
+      }
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          null,
+          'Action'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Comedy'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Documentary'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Family'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Fantasy'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Horror'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Mystery'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Romance'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video-category-container' },
+          _react2.default.createElement(
+            _reactSlick2.default,
+            settings,
+            this.props.video.action.map(function (video, idx) {
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'video-thumbnail' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-title' },
+                  video.name
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'video-playbutton' },
+                  'playbutton'
+                ),
+                _react2.default.createElement('img', { className: 'video-img', src: video.img })
+              );
+            })
+          )
+        )
+      );
+    }
+  }]);
+
+  return VideoIndex;
+}(_react.Component);
+
+exports.default = VideoIndex;
 
 /***/ })
 /******/ ]);

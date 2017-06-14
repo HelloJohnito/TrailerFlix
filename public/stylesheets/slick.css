@@ -6,6 +6,7 @@
 
 .slick-list
 {
+    height: 400px;
     position: relative;
 
     display: block;
@@ -143,7 +144,7 @@
 .slick-next {
   height: 100%;
   width: 80px;
-  right: -40px;
+  right: 0px;
   background: black;
   background-image: url("https://res.cloudinary.com/ddqzltwv6/image/upload/c_scale,w_35/v1478506673/rightArrow_v68xne.png");
   background-repeat: no-repeat;
