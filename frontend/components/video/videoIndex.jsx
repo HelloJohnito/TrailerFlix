@@ -13,8 +13,8 @@ class VideoIndex extends Component{
   render(){
 
     var settings = {
-      slidesToShow: 3,
-      slidesToScroll: 2,
+      slidesToShow: 4,
+      slidesToScroll: 1,
       infinite: true
     };
 

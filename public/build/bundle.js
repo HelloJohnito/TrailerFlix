@@ -14733,8 +14733,8 @@ var VideoIndex = function (_Component) {
     value: function render() {
 
       var settings = {
-        slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         infinite: true
       };
 
