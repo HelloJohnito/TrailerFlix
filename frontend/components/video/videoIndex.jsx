@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import VideoItem from './videoItem';
 
 class VideoIndex extends Component{
   constructor(props){
@@ -16,6 +15,7 @@ class VideoIndex extends Component{
     var settings = {
       slidesToShow: 3,
       slidesToScroll: 2,
+      infinite: true
     };
 
     if(!this.props.video.num){
