@@ -10,6 +10,7 @@
 
     <link rel='stylesheet' href='/stylesheets/homepage.css' />
     <link rel='stylesheet' href='/stylesheets/indexpage.css' />
+    <link rel='stylesheet' href='/stylesheets/videopage.css' />
 
     <script src="/build/bundle.js"></script>
   </head>

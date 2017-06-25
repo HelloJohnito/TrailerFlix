@@ -12,3 +12,11 @@ export const fetchAllVideos = (request) => {
     params: request
   });
 };
+
+
+export const fetchVideoById = (id) => {
+  return axios({
+    method: 'get',
+    url: `/api/video/${id}`,
+  });
+};

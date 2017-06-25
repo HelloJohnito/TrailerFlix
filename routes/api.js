@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var VideoController = require('../controllers/videoController');
 var Controllers = require("../controllers");
 
-
+// grab all videos from the catgory model
 router.get('/:resource', function(req, res, next){
   //use req.query for data send down from utilAPi
   var resource = req.params.resource;
@@ -35,36 +34,37 @@ router.get('/:resource', function(req, res, next){
 });
 
 
-router.get('/:resource/:category', function(req, res, next){
-  var resource = req.params.resource;
-  var category = req.params.category;
-  var controller = Controllers[resource];
+// router.get('/:resource/:category', function(req, res, next){
+//   var resource = req.params.resource;
+//   var category = req.params.category;
+//   var controller = Controllers[resource];
+//
+//   if(controller === null){
+//     res.json({
+//       confirmation: 'fail',
+//       message: 'Invaild resource request: '+ resource
+//     });
+//     return;
+//   }
+//
+//   controller.find({category: category}, function(err, results){
+//       if(err){
+//         res.json({
+//           confirmation: 'fail',
+//           message: err
+//         });
+//         return;
+//       }
+//       res.json({
+//         confirmation: 'success',
+//         results: results
+//       });
+//   });
+// });
 
-  if(controller === null){
-    res.json({
-      confirmation: 'fail',
-      message: 'Invaild resource request: '+ resource
-    });
-    return;
-  }
 
-  controller.find({category: category}, function(err, results){
-      if(err){
-        res.json({
-          confirmation: 'fail',
-          message: err
-        });
-        return;
-      }
-      res.json({
-        confirmation: 'success',
-        results: results
-      });
-  });
-});
-
-
-router.get('/:resource/:category/:id', function(req, res, next){
+//grab one video from the video model
+router.get('/:resource/:id', function(req, res, next){
   var resource = req.params.resource;
   var id = req.params.id;
   var controller = Controllers[resource];
