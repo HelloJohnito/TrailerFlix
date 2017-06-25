@@ -27,7 +27,7 @@ class VideoIndex extends Component{
 
         <div className="video-category-container">
           <div className="video-category-title">Comedy</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.comedy} />
         </div>
 
         <div className="video-category-container">
