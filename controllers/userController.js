@@ -1,7 +1,17 @@
 var User = require('../models/user');
+var passport = require('passport');
 
 module.exports = {
-//   find: function(params, callback){
-//     User.find(params, function(err))
-//   }
-// };
+  create: function(params, callback){
+    User.register(new User({username: params.username}), params.password, function(err, user){
+      if(err){
+        console.log(err);
+        callback(err, null);
+        return;
+      }
+      passport.authenticate("local")(params.req, params.res, function(){
+        callback(null, user);
+      });
+    });
+  }
+};

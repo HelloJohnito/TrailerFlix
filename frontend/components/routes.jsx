@@ -5,6 +5,8 @@ import HomePage from './page/homepage';
 import IndexPage from './page/indexpage';
 import VideoPlayerPage from './page/VideoPlayerPage';
 
+import SessionForm from './session/sessionForm';
+
 
 
 class Routes extends Component {
@@ -17,6 +19,7 @@ class Routes extends Component {
       <div>
         <Switch>
           <Route exact path='/' component={ HomePage }/>
+          <Route exact path='/signup' component={ SessionForm }/>
           <Route exact path="/video" component={ IndexPage }/>
           <Route path="/video/:videoId" component={ VideoPlayerPage }/>
         </Switch>
