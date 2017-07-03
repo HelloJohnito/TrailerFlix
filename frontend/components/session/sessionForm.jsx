@@ -22,11 +22,6 @@ class SessionForm extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-    axios({
-      method: 'post',
-      url: '/api/user',
-      params: this.state
-    }).then(user => console.log(user));
   }
 
   render(){
