@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import axios from 'axios';
 
-class SessionForm extends React.Component {
+class SessionForm extends Component {
   constructor(props){
     super(props);
 
@@ -22,12 +22,15 @@ class SessionForm extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
+    this.props.processForm(this.state);
   }
 
   render(){
     return(
       <div className="session-background">
         <form className="session-form" onSubmit={this.handleSubmit}>
+          <label>{this.props.path}</label>
+          <br/>
 
           <label> Username
             <input className="" type="text" onChange={this.handleUpdate("username")}></input>

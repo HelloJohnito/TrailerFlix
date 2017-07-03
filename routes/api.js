@@ -88,7 +88,7 @@ router.post('/:resource', function(req,res,next){
     params = req.query;
   }
 
-  controller.create(params, function(err, user){
+  controller.create(params, function(err, result){
     if(err){
       res.json({
         confirmation: 'fail',
@@ -96,6 +96,9 @@ router.post('/:resource', function(req,res,next){
       });
       return;
     }
+    let user = {};
+    user.username = result.username;
+    user.id = result._id;
     res.json({
       confirmation: 'success',
       result: user

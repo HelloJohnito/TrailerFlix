@@ -1,13 +1,25 @@
 import { RECEIVE_USER, RECEIVE_ERROR } from '../actions/sessionActions';
 
+const _nullUser = {
+    currentUser: null,
+    errors: null
+};
 
-const SessionReducer = (state = {}, action) => {
+const SessionReducer = (state = _nullUser, action) => {
   Object.freeze();
   switch (action.type){
     case RECEIVE_USER:
-      return Object.assign({}, action.response);
+      let user = {
+        currentUser: action.response,
+        error: []
+      };
+      return Object.assign({}, user);
     case RECEIVE_ERROR:
-      return Object.assign({}, action.response);
+      let error = {
+        currentUser: null,
+        error: action.response
+      };
+      return Object.assign({}, error);
     default:
       return state;
   }

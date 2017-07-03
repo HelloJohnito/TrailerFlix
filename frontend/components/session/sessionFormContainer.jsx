@@ -1,13 +1,19 @@
 import { connect } from 'react-redux';
 import SessionForm from './sessionForm';
-import { signup } from '../../actions/sessionActions';
+import { signup, login } from '../../actions/sessionActions';
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = (state, ownProps) => ({
+  loggedIn: state.session.currentUser ? true : false,
+  path: ownProps.match.path,
+  error : state.session.error
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  signup: (userInfo) => dispatch(signup(userInfo))
-});
+const mapDispatchToProps = (dispatch, ownProps) => {
+  let path = ownProps.match.path;
+  let processForm = (path === "/signup") ? signup : login;
+  return {
+    processForm: (userInfo) => dispatch(processForm(userInfo))
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);

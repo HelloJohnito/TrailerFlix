@@ -5,9 +5,15 @@ export const RECEIVE_ERROR = "RECEIVE_ERROR";
 
 
 export const signup = request => dispatch => (
-  APIUtil.signup(request).then(response => dispatch(receiveUser(response.data.result)),
-  err => dispatch(receiveError(err.responseJSON)))
-);
+  APIUtil.signup(request).then(response => {
+    if(response.data.confirmation === "success"){
+      dispatch(receiveUser(response.data.result));
+    }
+    else {
+      dispatch(receiveError(response.data.message));
+    }
+  }
+));
 
 
 

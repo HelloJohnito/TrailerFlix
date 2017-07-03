@@ -3,7 +3,7 @@ import SessionReducer from './sessionReducer';
 import VideoReducer from './videoReducer';
 
 const RootReducer = combineReducers({
-  user: SessionReducer,
+  session: SessionReducer,
   video: VideoReducer
 });
 
