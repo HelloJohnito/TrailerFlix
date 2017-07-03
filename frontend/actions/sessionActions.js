@@ -15,7 +15,16 @@ export const signup = request => dispatch => (
   }
 ));
 
-
+export const login = request => dispatch => (
+  APIUtil.login(request).then(response => {
+    if(response.data.confirmation === "success"){
+      dispatch(receiveUser(response.data.result));
+    }
+    else {
+      dispatch(receiveError(response.data.message));
+    }
+  }
+));
 
 export const receiveUser = response => ({
   type: RECEIVE_USER,

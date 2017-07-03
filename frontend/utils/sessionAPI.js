@@ -7,3 +7,11 @@ export const signup = (user) => {
     params: user
   });
 };
+
+export const login = (user) => {
+  return axios({
+    method: 'POST',
+    url: '/api/session',
+    params: user
+  });
+};

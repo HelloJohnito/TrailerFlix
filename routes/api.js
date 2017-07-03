@@ -67,11 +67,38 @@ router.get('/:resource/:id', function(req, res, next){
 });
 
 
+router.post('/session', function(req, res, next) {
+  passport.authenticate('local', function(err, user, info) {
+    if (err) {
+      return next(err);
+    }
+    if (!user) {
+      let errorObj = {
+        name: "Invalid",
+        message: "Invalid username or password"
+      };
+      return res.json({
+        confirmation: "fail",
+        message: errorObj
+      });
+    }
+    req.logIn(user, function(err1){
+      if (err1) {
+        return next(err1);
+      }
+      return res.json({
+        confirmation: "success",
+        result: user
+      });
+    });
+  })(req, res, next);
+});
+
+
 router.post('/:resource', function(req,res,next){
   var resource = req.params.resource;
   var controller = Controllers[resource];
   var params;
-
   if(controller === null){
     res.json({
       confirmation: 'fail',

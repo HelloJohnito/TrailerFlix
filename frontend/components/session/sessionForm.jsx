@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 
 class SessionForm extends Component {
@@ -14,11 +14,24 @@ class SessionForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidUpdate() {
+    this.redirectIfLoggedIn();
+  }
+
+
+  redirectIfLoggedIn() {
+    if (this.props.loggedIn) {
+      this.props.history.push('/video');
+    }
+  }
+
   handleUpdate(field){
     return e => (
       this.setState({[field]: e.currentTarget.value})
     );
   }
+
+
 
   handleSubmit(e){
     e.preventDefault();
