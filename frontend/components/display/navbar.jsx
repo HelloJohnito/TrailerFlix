@@ -15,8 +15,8 @@ class Navbar extends Component{
   render(){
     let logoPage = (this.props.currentUser) ? "/video" : "/";
     return (
-      <nav className="splash-nav flex">
-        <Link to={logoPage} className="splash-logo">TrailerFlix</Link>
+      <nav className="navbar flex">
+        <Link to={logoPage} className="nav-logo">TrailerFlix</Link>
 
         <Greeting currentUser={this.props.currentUser} logout={this.props.logout} history={this.props.history}/>
       </nav>

@@ -32,7 +32,6 @@ class SessionForm extends Component {
   }
 
 
-
   handleSubmit(e){
     e.preventDefault();
     this.props.processForm(this.state);
@@ -43,16 +42,16 @@ class SessionForm extends Component {
       <div className="session-background">
         <form className="session-form" onSubmit={this.handleSubmit}>
           <label>{this.props.path}</label>
-          <br/>
 
-          <label> Username
-            <input className="" type="text" onChange={this.handleUpdate("username")}></input>
-          </label>
+          <div className="flex">
+            <label> Username
+              <input className="" type="text" onChange={this.handleUpdate("username")}></input>
+            </label>
 
-          <label> Password
-            <input className="" type="password" onChange={this.handleUpdate("password")}></input>
-          </label>
-
+            <label> Password
+              <input className="" type="password" onChange={this.handleUpdate("password")}></input>
+            </label>
+          </div>
           <input className="form-submit" type="submit" value="Submit" />
         </form>
       </div>
