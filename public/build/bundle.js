@@ -14966,6 +14966,7 @@ var SessionForm = function (_Component) {
     value: function handleSubmit(e) {
       e.preventDefault();
       this.props.processForm(this.state);
+      this.props.history.push('/video');
     }
   }, {
     key: 'render',
@@ -33584,7 +33585,7 @@ var Greeting = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var content = this.state.login ? _react2.default.createElement(_sessionFormContainer2.default, { formType: 'login' }) : _react2.default.createElement(_sessionFormContainer2.default, { formType: 'signup' });
+      var content = this.state.login ? _react2.default.createElement(_sessionFormContainer2.default, { formType: 'login', history: this.props.history }) : _react2.default.createElement(_sessionFormContainer2.default, { formType: 'signup', history: this.props.history });
 
       if (!this.props.currentUser) {
         return _react2.default.createElement(
