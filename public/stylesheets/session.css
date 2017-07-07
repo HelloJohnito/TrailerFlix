@@ -1,10 +1,23 @@
 .session-background{
-  width: 600px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
+  margin-top: 30px;
   background: white;
+}
+
+.session-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .session-form input{
   padding:3px;
+  margin: 20px;
   border: 1px solid black;
+}
+
+.form-submit{
+  width: 100px;
 }

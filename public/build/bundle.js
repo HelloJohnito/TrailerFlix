@@ -14982,22 +14982,22 @@ var SessionForm = function (_Component) {
             this.props.path
           ),
           _react2.default.createElement(
-            'div',
-            { className: 'flex' },
-            _react2.default.createElement(
-              'label',
-              null,
-              ' Username',
-              _react2.default.createElement('input', { className: '', type: 'text', onChange: this.handleUpdate("username") })
-            ),
-            _react2.default.createElement(
-              'label',
-              null,
-              ' Password',
-              _react2.default.createElement('input', { className: '', type: 'password', onChange: this.handleUpdate("password") })
-            )
+            'label',
+            null,
+            ' Username',
+            _react2.default.createElement('input', { className: '', type: 'text', onChange: this.handleUpdate("username") })
           ),
-          _react2.default.createElement('input', { className: 'form-submit', type: 'submit', value: 'Submit' })
+          _react2.default.createElement(
+            'label',
+            null,
+            ' Password',
+            _react2.default.createElement('input', { className: '', type: 'password', onChange: this.handleUpdate("password") })
+          ),
+          _react2.default.createElement(
+            'label',
+            null,
+            _react2.default.createElement('input', { className: 'form-submit', type: 'submit', value: 'Submit' })
+          )
         )
       );
     }
@@ -33578,6 +33578,7 @@ var Greeting = function (_Component) {
     key: 'handleLogOut',
     value: function handleLogOut() {
       this.props.logout();
+      this.setState({ modalOpen: false });
       this.props.history.push("/");
     }
   }, {
@@ -34701,6 +34702,7 @@ var ModalStyle = {
     position: 'fixed',
     margin: 'auto',
     border: '1px solid #ccc',
+    backgroundColor: 'white',
     padding: '20px',
     zIndex: 11,
     width: '350px',

@@ -28,6 +28,7 @@ class Greeting extends Component{
 
   handleLogOut(){
     this.props.logout();
+    this.setState({modalOpen: false});
     this.props.history.push("/");
   }
 

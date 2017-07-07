@@ -18,7 +18,6 @@ class SessionForm extends Component {
     this.redirectIfLoggedIn();
   }
 
-
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
       this.props.history.push('/video');
@@ -43,7 +42,6 @@ class SessionForm extends Component {
         <form className="session-form" onSubmit={this.handleSubmit}>
           <label>{this.props.path}</label>
 
-          <div className="flex">
             <label> Username
               <input className="" type="text" onChange={this.handleUpdate("username")}></input>
             </label>
@@ -51,8 +49,10 @@ class SessionForm extends Component {
             <label> Password
               <input className="" type="password" onChange={this.handleUpdate("password")}></input>
             </label>
-          </div>
-          <input className="form-submit" type="submit" value="Submit" />
+
+            <label>
+              <input className="form-submit" type="submit" value="Submit" />
+            </label>
         </form>
       </div>
     );
