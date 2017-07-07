@@ -4,7 +4,7 @@ var Controllers = require("../controllers");
 var User = require("../models/user");
 var passport = require('passport');
 
-// check if user is logged in 
+// check if user is logged in
 router.get('/verify', function(req, res,next){
   if(req.isAuthenticated()){
     return res.json({
@@ -18,6 +18,7 @@ router.get('/verify', function(req, res,next){
     });
   }
 });
+
 
 // grab all videos from the category model
 router.get('/:resource', function(req, res, next){

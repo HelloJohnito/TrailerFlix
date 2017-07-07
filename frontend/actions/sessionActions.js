@@ -1,4 +1,5 @@
 import * as APIUtil from '../utils/sessionAPI';
+import { hashHistory } from 'react-router-dom';
 
 export const RECEIVE_USER = "RECEIVE_USER";
 export const RECEIVE_ERROR = "RECEIVE_ERROR";
@@ -35,7 +36,7 @@ export const logout = request => dispatch => (
       dispatch(receiveError(response.data.message));
     }
   }
-).then(console.log("push here for logout")));
+));
 
 
 export const verify = request => dispatch => (

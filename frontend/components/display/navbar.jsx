@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Greeting from './greeting';
 
 
 class Navbar extends Component{
   constructor(props){
     super(props);
-    this.handleLogOut = this.handleLogOut.bind(this);
   }
 
-  componentDidMount(){
+  componentDidUpdate(prevProps, prevState){
     this.props.verify();
   }
 
-  handleLogOut(){
-    this.props.logout();
-  }
-
   render(){
-    console.log(this.props)
+    let logoPage = (this.props.currentUser) ? "/video" : "/";
     return (
       <nav className="splash-nav flex">
-        <h1 className="splash-logo">TrailerFlix</h1>
-        <div>
-          <Link to={"/signup"} className="splash-signup splash-button">Sign up</Link>
-          <Link to={"/login"} className="splash-signup splash-button">Log In</Link>
-          <button onClick={this.handleLogOut} className="splash-signup splash-button">Log Out</button>
-        </div>
+        <Link to={logoPage} className="splash-logo">TrailerFlix</Link>
+
+        <Greeting currentUser={this.props.currentUser} logout={this.props.logout} history={this.props.history}/>
       </nav>
     );
   }

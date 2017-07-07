@@ -11,7 +11,7 @@ class IndexPage extends Component {
   render(){
     return(
       <div className="indexpage-container">
-        <NavbarContainer />
+        <NavbarContainer history={this.props.history}/>
         <VideoContainer/>
       </div>
     );
