@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_VIDEOS, RECEIVE_VIDEO } from '../actions/videoAction';
+import { RECEIVE_ALL_VIDEOS, RECEIVE_VIDEO } from '../actions/videoActions';
 
 // const initialState = {
 //   name: "",

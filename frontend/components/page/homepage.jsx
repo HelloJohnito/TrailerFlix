@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import Navbar from '../display/nav';
+import NavbarContainer from '../display/navbarContainer';
 
 
 class HomePage extends Component{
@@ -18,7 +18,7 @@ class HomePage extends Component{
       <div className="splash-container">
         <div className="splash-image">
           <div className="splash-gradient">
-            <Navbar/>
+            <NavbarContainer history={this.props.history} />
 
             <div className="splash-outer-container-title flex-horizontal">
               <div className="splash-inner-container-title flex-vertical">
@@ -36,4 +36,4 @@ class HomePage extends Component{
   }
 }
 
-export default HomePage;
+export default withRouter(HomePage);
