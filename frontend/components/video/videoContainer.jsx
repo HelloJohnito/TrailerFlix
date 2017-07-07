@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchAllVideos } from '../../actions/videoAction';
+import { fetchAllVideos } from '../../actions/videoActions';
 import VideoIndex from './videoIndex';
 
 const mapStateToProps = (state, ownProps) => {

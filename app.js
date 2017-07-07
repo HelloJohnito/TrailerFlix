@@ -3,8 +3,12 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var passport = require('passport');
+var bodyParser = require('body-parser');
+var LocalStrategy = require('passport-local');
+var passportLocalMongoose = require('passport-local-mongoose');
+var User = require('./models/user');
 
 //creates the mongodb
 var db = "mongodb://localhost/TrailerFlix";
@@ -17,7 +21,6 @@ mongoose.connect(db, function(err, res){
   }
 });
 
-
 var index = require('./routes/index');
 var api = require('./routes/api');
 var seed = require('./seed');
@@ -27,6 +30,20 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
+
+//config passport for auth
+app.use(require('express-session')({
+  secret: "This is used to encode and decode password",
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 //seed the database
 // seed();
@@ -40,9 +57,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/video', index);
-app.use('/video/:id', index);
 app.use('/api', api);
+app.use('/:resouces', index);
+app.use('/video/:id', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

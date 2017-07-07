@@ -1,4 +1,5 @@
 var mongoose = require("mongoose");
+var User = require("./models/user");
 var Video = require("./models/video");
 var Category = require("./models/category");
 
@@ -168,6 +169,14 @@ var videoData = [
 
 
 function seedDB(){
+
+  // User.remove({}, function(err){
+  //   if(err){
+  //    console.log(err);
+  //    return;
+  //  }
+  //  console.log("removed Users!");
+  // });
 
   //REMOVE
   // Video.remove({}, function(err){

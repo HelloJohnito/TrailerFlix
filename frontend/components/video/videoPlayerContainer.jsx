@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import VideoPlayer from './videoPlayer';
-import { fetchVideoById } from '../../actions/videoAction';
+import { fetchVideoById } from '../../actions/videoActions';
 
 const mapStateToProps = (state, ownProps) => {
   return({

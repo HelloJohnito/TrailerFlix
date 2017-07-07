@@ -1,0 +1,10 @@
+.session-background{
+  width: 600px;
+  height: 200px;
+  background: white;
+}
+
+.session-form input{
+  padding:3px;
+  border: 1px solid black;
+}

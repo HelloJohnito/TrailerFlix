@@ -11,8 +11,10 @@
     <link rel='stylesheet' href='/stylesheets/homepage.css' />
     <link rel='stylesheet' href='/stylesheets/indexpage.css' />
     <link rel='stylesheet' href='/stylesheets/videopage.css' />
+    <link rel='stylesheet' href='/stylesheets/session.css' />
 
     <script src="/build/bundle.js"></script>
+
   </head>
   <body>
     <div id="root">React Not Working</div>
