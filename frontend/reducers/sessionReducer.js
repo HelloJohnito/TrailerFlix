@@ -11,7 +11,7 @@ const SessionReducer = (state = _nullUser, action) => {
     case RECEIVE_USER:
       let user = {
         currentUser: action.response,
-        error: []
+        error: null
       };
       return Object.assign({}, user);
     case RECEIVE_ERROR:

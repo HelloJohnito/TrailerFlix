@@ -19,6 +19,13 @@ export const login = (user) => {
 export const logout= (user) => {
   return axios({
     method: 'DELETE',
-    url: '/api/session',
+    url: '/api/logout',
+  });
+};
+
+export const verify= (user) => {
+  return axios({
+    method: 'GET',
+    url: '/api/verify',
   });
 };

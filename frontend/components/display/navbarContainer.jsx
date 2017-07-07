@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
-import { logout, clearErrors } from '../../actions/sessionActions';
+import { verify, logout, clearErrors } from '../../actions/sessionActions';
 import Navbar from './navbar';
 
 const mapStateToProps = (state, ownProps) => ({
-  name: ownProps,
   currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
+  verify: () => dispatch(verify()),
   logout: () => dispatch(logout()),
   clearErrors: () => dispatch(clearErrors())
 });

@@ -27,7 +27,7 @@ export const login = request => dispatch => (
 ));
 
 export const logout = request => dispatch => (
-  APIUtil.login(request).then(response => {
+  APIUtil.logout(request).then(response => {
     if(response.data.confirmation === "success"){
       dispatch(receiveUser(null));
     }
@@ -35,7 +35,19 @@ export const logout = request => dispatch => (
       dispatch(receiveError(response.data.message));
     }
   }
-).then(console.log("push here")));
+).then(console.log("push here for logout")));
+
+
+export const verify = request => dispatch => (
+  APIUtil.verify(request).then(response => {
+    if(response.data.confirmation === "success"){
+      dispatch(receiveUser(response.data.result));
+    }
+    else {
+      dispatch(receiveError(response.data.message));
+    }
+  }
+));
 
 
 export const receiveUser = response => ({

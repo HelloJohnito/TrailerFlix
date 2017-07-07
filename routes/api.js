@@ -4,6 +4,20 @@ var Controllers = require("../controllers");
 var User = require("../models/user");
 var passport = require('passport');
 
+// check if user is logged in 
+router.get('/verify', function(req, res,next){
+  if(req.isAuthenticated()){
+    return res.json({
+      confirmation: 'success',
+      result: req.user
+    });
+  } else {
+    return res.json({
+      confirmation: 'success',
+      result: null
+    });
+  }
+});
 
 // grab all videos from the category model
 router.get('/:resource', function(req, res, next){
@@ -95,6 +109,7 @@ router.post('/session', function(req, res, next) {
 });
 
 
+// need to separate user and others
 router.post('/:resource', function(req,res,next){
   var resource = req.params.resource;
   var controller = Controllers[resource];
@@ -131,6 +146,14 @@ router.post('/:resource', function(req,res,next){
       confirmation: 'success',
       result: user
     });
+  });
+});
+
+router.delete('/logout', function(req, res){
+  req.logout();
+  return res.json({
+    confirmation: 'success',
+    result: null
   });
 });
 

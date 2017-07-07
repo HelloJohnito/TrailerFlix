@@ -8,11 +8,16 @@ class Navbar extends Component{
     this.handleLogOut = this.handleLogOut.bind(this);
   }
 
+  componentDidMount(){
+    this.props.verify();
+  }
+
   handleLogOut(){
     this.props.logout();
   }
 
   render(){
+    console.log(this.props)
     return (
       <nav className="splash-nav flex">
         <h1 className="splash-logo">TrailerFlix</h1>

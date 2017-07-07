@@ -8724,7 +8724,7 @@ module.exports = function bind(fn, thisArg) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.receiveError = exports.receiveUser = exports.logout = exports.login = exports.signup = exports.RECEIVE_ERROR = exports.RECEIVE_USER = undefined;
+exports.receiveError = exports.receiveUser = exports.verify = exports.logout = exports.login = exports.signup = exports.RECEIVE_ERROR = exports.RECEIVE_USER = undefined;
 
 var _sessionAPI = __webpack_require__(160);
 
@@ -8761,13 +8761,25 @@ var login = exports.login = function login(request) {
 
 var logout = exports.logout = function logout(request) {
   return function (dispatch) {
-    return APIUtil.login(request).then(function (response) {
+    return APIUtil.logout(request).then(function (response) {
       if (response.data.confirmation === "success") {
         dispatch(receiveUser(null));
       } else {
         dispatch(receiveError(response.data.message));
       }
-    }).then(console.log("push here"));
+    }).then(console.log("push here for logout"));
+  };
+};
+
+var verify = exports.verify = function verify(request) {
+  return function (dispatch) {
+    return APIUtil.verify(request).then(function (response) {
+      if (response.data.confirmation === "success") {
+        dispatch(receiveUser(response.data.result));
+      } else {
+        dispatch(receiveError(response.data.message));
+      }
+    });
   };
 };
 
@@ -15360,7 +15372,7 @@ var SessionReducer = function SessionReducer() {
     case _sessionActions.RECEIVE_USER:
       var user = {
         currentUser: action.response,
-        error: []
+        error: null
       };
       return Object.assign({}, user);
     case _sessionActions.RECEIVE_ERROR:
@@ -15459,7 +15471,7 @@ document.addEventListener('DOMContentLoaded', function () {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.logout = exports.login = exports.signup = undefined;
+exports.verify = exports.logout = exports.login = exports.signup = undefined;
 
 var _axios = __webpack_require__(43);
 
@@ -15486,7 +15498,14 @@ var login = exports.login = function login(user) {
 var logout = exports.logout = function logout(user) {
   return (0, _axios2.default)({
     method: 'DELETE',
-    url: '/api/session'
+    url: '/api/logout'
+  });
+};
+
+var verify = exports.verify = function verify(user) {
+  return (0, _axios2.default)({
+    method: 'GET',
+    url: '/api/verify'
   });
 };
 
@@ -33391,13 +33410,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    name: ownProps,
     currentUser: state.session.currentUser
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
+    verify: function verify() {
+      return dispatch((0, _sessionActions.verify)());
+    },
     logout: function logout() {
       return dispatch((0, _sessionActions.logout)());
     },
@@ -33449,6 +33470,11 @@ var Navbar = function (_Component) {
   }
 
   _createClass(Navbar, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.props.verify();
+    }
+  }, {
     key: 'handleLogOut',
     value: function handleLogOut() {
       this.props.logout();
@@ -33456,6 +33482,7 @@ var Navbar = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      console.log(this.props);
       return _react2.default.createElement(
         'nav',
         { className: 'splash-nav flex' },
