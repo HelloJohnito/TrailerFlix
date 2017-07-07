@@ -26,6 +26,18 @@ export const login = request => dispatch => (
   }
 ));
 
+export const logout = request => dispatch => (
+  APIUtil.login(request).then(response => {
+    if(response.data.confirmation === "success"){
+      dispatch(receiveUser(null));
+    }
+    else {
+      dispatch(receiveError(response.data.message));
+    }
+  }
+).then(console.log("push here")));
+
+
 export const receiveUser = response => ({
   type: RECEIVE_USER,
   response

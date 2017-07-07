@@ -15,3 +15,10 @@ export const login = (user) => {
     params: user
   });
 };
+
+export const logout= (user) => {
+  return axios({
+    method: 'DELETE',
+    url: '/api/session',
+  });
+};

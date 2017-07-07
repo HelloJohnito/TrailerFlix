@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from '../display/nav';
+import NavbarContainer from '../display/navbarContainer';
 import VideoContainer from '../video/videoContainer';
 
 class IndexPage extends Component {
@@ -11,7 +11,7 @@ class IndexPage extends Component {
   render(){
     return(
       <div className="indexpage-container">
-        <Navbar />
+        <NavbarContainer />
         <VideoContainer/>
       </div>
     );

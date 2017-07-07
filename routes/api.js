@@ -66,7 +66,7 @@ router.get('/:resource/:id', function(req, res, next){
   });
 });
 
-
+// login the user
 router.post('/session', function(req, res, next) {
   passport.authenticate('local', function(err, user, info) {
     if (err) {
@@ -123,6 +123,7 @@ router.post('/:resource', function(req,res,next){
       });
       return;
     }
+    //will have to change
     let user = {};
     user.username = result.username;
     user.id = result._id;
