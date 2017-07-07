@@ -33567,7 +33567,7 @@ var Greeting = function (_Component) {
           { className: 'flex' },
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: "/user", className: 'splash-signup splash-button' },
+            { to: "/user", className: 'splash-button' },
             this.props.currentUser.username
           ),
           _react2.default.createElement(

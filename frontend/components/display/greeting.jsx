@@ -26,7 +26,7 @@ class Greeting extends Component{
     else {
       return(
         <div className="flex">
-          <Link to={"/user"} className="splash-signup splash-button">{this.props.currentUser.username}</Link>
+          <Link to={"/user"} className="splash-button">{this.props.currentUser.username}</Link>
           <button onClick={this.handleLogOut} className="splash-button">Log Out</button>
         </div>
       );
