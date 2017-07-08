@@ -11,11 +11,11 @@ const ModalStyle = {
   content : {
     position        : 'fixed',
     margin          : 'auto',
-    border          : '1px solid #ccc',
-    backgroundColor : 'white',
+    border          : '1px solid black',
+    backgroundColor : '#2a2a2b',
     padding         : '20px',
     zIndex          :  11,
-    width           : '350px',
+    width           : '330px',
     height          : '350px',
   }
 };

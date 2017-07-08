@@ -53,8 +53,9 @@ class Greeting extends Component{
     }
     else {
       return(
-        <div className="flex">
-          <Link to={"/user"} className="nav-button">{this.props.currentUser.username}</Link>
+        <div className="nav-loggedin flex">
+          <img className="nav-user-icon" src="https://res.cloudinary.com/deh9l9lyq/image/upload/v1499474794/user-icon_g4hecp.png"></img>
+          <h1>{this.props.currentUser.username}</h1>
           <button onClick={this.handleLogOut} className="nav-button">Log Out</button>
         </div>
       );
@@ -63,3 +64,6 @@ class Greeting extends Component{
 }
 
 export default Greeting;
+
+
+// <Link to={"/user"} className="nav-button">{this.props.currentUser.username}</Link>

@@ -8,7 +8,7 @@ class Navbar extends Component{
     super(props);
   }
 
-  componentDidUpdate(prevProps, prevState){
+  componentDidMount(){
     this.props.verify();
   }
 
