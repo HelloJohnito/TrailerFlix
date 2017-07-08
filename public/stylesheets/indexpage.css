@@ -120,6 +120,15 @@
   word-wrap: break-word;
 }
 
+.video-detail-right a,.video-detail-right button {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+.video-detail-right a:hover, .video-detail-right button:hover{
+  text-decoration: underline;
+}
 
 .video-detail-container img{
   margin:auto;

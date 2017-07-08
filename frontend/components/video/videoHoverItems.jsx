@@ -17,10 +17,6 @@ class VideoHoverItems extends Component {
     };
   }
 
-  getVideo(){
-    this.fetchVideoById(this.props.video._id).then(this.openModal());
-  }
-
   openModal(){
     this.setState({modalOpen: true});
   }
@@ -49,7 +45,7 @@ class VideoHoverItems extends Component {
           onRequestClose={this.closeModal}
           style={ModalStyleDetail}>
             <button className="modal-close" onClick={this.closeModal}>X</button>
-          <VideoDetail video = {this.props.video}/>
+          <VideoDetail video ={this.props.video} user={this.props.user}/>
         </Modal>
       </div>
     );

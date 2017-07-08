@@ -20,7 +20,7 @@ class VideoSlider extends Component{
       <Slider {...this.settings}>
       {this.props.video.map((video, idx) => (
         <div key={idx}>
-          <VideoHoverItems video={video}/>
+          <VideoHoverItems video={video} user={this.props.user}/>
         </div>
       ))}
     </Slider>

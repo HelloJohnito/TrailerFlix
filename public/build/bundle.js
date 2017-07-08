@@ -15418,6 +15418,8 @@ var _reactRedux = __webpack_require__(26);
 
 var _videoActions = __webpack_require__(46);
 
+var _sessionActions = __webpack_require__(45);
+
 var _videoIndex = __webpack_require__(161);
 
 var _videoIndex2 = _interopRequireDefault(_videoIndex);
@@ -15425,8 +15427,8 @@ var _videoIndex2 = _interopRequireDefault(_videoIndex);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
-
   return {
+    user: state.session,
     video: state.video
   };
 };
@@ -15435,6 +15437,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
     fetchAllVideos: function fetchAllVideos() {
       return dispatch((0, _videoActions.fetchAllVideos)());
+    },
+    verify: function verify() {
+      return dispatch((0, _sessionActions.verify)());
     }
   };
 };
@@ -15498,11 +15503,6 @@ var VideoHoverItems = function (_Component) {
   }
 
   _createClass(VideoHoverItems, [{
-    key: 'getVideo',
-    value: function getVideo() {
-      this.fetchVideoById(this.props.video._id).then(this.openModal());
-    }
-  }, {
     key: 'openModal',
     value: function openModal() {
       this.setState({ modalOpen: true });
@@ -15550,7 +15550,7 @@ var VideoHoverItems = function (_Component) {
             { className: 'modal-close', onClick: this.closeModal },
             'X'
           ),
-          _react2.default.createElement(_videoDetail2.default, { video: this.props.video })
+          _react2.default.createElement(_videoDetail2.default, { video: this.props.video, user: this.props.user })
         )
       );
     }
@@ -15605,6 +15605,7 @@ var VideoIndex = function (_Component) {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.props.fetchAllVideos();
+      this.props.verify();
     }
   }, {
     key: 'render',
@@ -15629,7 +15630,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Action'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15639,7 +15640,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Comedy'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.comedy })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.comedy, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15649,7 +15650,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Documentary'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15659,7 +15660,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Family'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15669,7 +15670,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Fantasy'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15679,7 +15680,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Horror'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15689,7 +15690,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Mystery'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         ),
         _react2.default.createElement(
           'div',
@@ -15699,7 +15700,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Romance'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user.currentUser })
         )
       );
     }
@@ -15841,6 +15842,8 @@ var VideoSlider = function (_Component) {
   _createClass(VideoSlider, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         _reactSlick2.default,
         this.settings,
@@ -15848,7 +15851,7 @@ var VideoSlider = function (_Component) {
           return _react2.default.createElement(
             'div',
             { key: idx },
-            _react2.default.createElement(_videoHoverItems2.default, { video: video })
+            _react2.default.createElement(_videoHoverItems2.default, { video: video, user: _this2.props.user })
           );
         })
       );
@@ -34816,6 +34819,8 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34830,36 +34835,59 @@ var VideoDetail = function (_Component) {
   function VideoDetail(props) {
     _classCallCheck(this, VideoDetail);
 
-    return _possibleConstructorReturn(this, (VideoDetail.__proto__ || Object.getPrototypeOf(VideoDetail)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (VideoDetail.__proto__ || Object.getPrototypeOf(VideoDetail)).call(this, props));
+
+    _this.addToFavorite = _this.addToFavorite.bind(_this);
+    return _this;
   }
 
   _createClass(VideoDetail, [{
-    key: "render",
+    key: 'addToFavorite',
+    value: function addToFavorite(e) {
+      e.preventDefault();
+      console.log("Yes");
+    }
+  }, {
+    key: 'render',
     value: function render() {
       console.log(this.props);
       return _react2.default.createElement(
-        "div",
-        { className: "video-detail-container flex" },
+        'div',
+        { className: 'video-detail-container flex' },
         _react2.default.createElement(
-          "div",
-          { className: "video-detail-left" },
-          _react2.default.createElement("img", { src: this.props.video.img })
+          'div',
+          { className: 'video-detail-left' },
+          _react2.default.createElement('img', { src: this.props.video.img })
         ),
         _react2.default.createElement(
-          "div",
-          { className: "video-detail-right" },
+          'div',
+          { className: 'video-detail-right' },
           _react2.default.createElement(
-            "h1",
+            'h1',
             null,
             this.props.video.name
           ),
           _react2.default.createElement(
-            "div",
-            { className: "video-detail-right-description-container" },
+            'div',
+            { className: 'video-detail-right-description-container' },
             _react2.default.createElement(
-              "p",
+              'p',
               null,
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: '' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/video/' + this.props.video._id, className: '' },
+              'Play Trailer'
+            ),
+            _react2.default.createElement(
+              'button',
+              { onClick: this.addToFavorite },
+              'Add to Favorite'
             )
           )
         )
