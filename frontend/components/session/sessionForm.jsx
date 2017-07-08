@@ -18,7 +18,6 @@ class SessionForm extends Component {
     this.redirectIfLoggedIn();
   }
 
-
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
       this.props.history.push('/video');
@@ -32,29 +31,38 @@ class SessionForm extends Component {
   }
 
 
-
   handleSubmit(e){
     e.preventDefault();
     this.props.processForm(this.state);
+    this.props.history.push('/video');
   }
 
   render(){
+
+    let title = (this.props.path === "signup") ? "sign up" : "log in";
+
     return(
       <div className="session-background">
         <form className="session-form" onSubmit={this.handleSubmit}>
-          <label>{this.props.path}</label>
-          <br/>
+          <label>{title}</label>
 
-          <label> Username
-            <input className="" type="text" onChange={this.handleUpdate("username")}></input>
-          </label>
+            <label> Username</label>
+              <input type="text" placeholder="Username" onChange={this.handleUpdate("username")}></input>
 
-          <label> Password
-            <input className="" type="password" onChange={this.handleUpdate("password")}></input>
-          </label>
+            <label> Password</label>
+              <input type="password" placeholder="Password" onChange={this.handleUpdate("password")}></input>
 
-          <input className="form-submit" type="submit" value="Submit" />
+
+            <div className="form-submit-container">
+              <input className="form-submit" type="submit" value="Submit" />
+            </div>
+
         </form>
+
+        <h1 className="form-switch"> Don't hav an account? Try the
+          <button className=""> DEMO ACCOUNT</button>
+        </h1>
+
       </div>
     );
   }

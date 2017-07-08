@@ -1,10 +1,60 @@
 .session-background{
-  width: 600px;
-  height: 200px;
-  background: white;
+  width: 350px;
+  height: 250px;
+  margin-top: 30px;
+  background: #2a2a2b;
+}
+
+.session-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.session-form label{
+  margin-top: 20px;
+  color: white;
+}
+
+.session-form label:first-child{
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-submit{
+  width: 100px;
+  text-align: center;
+  color: black;
 }
 
 .session-form input{
+  color: white;
   padding:3px;
+  margin: 0px 10px 5px 0;
   border: 1px solid black;
+}
+
+.form-submit-container{
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form-submit:hover{
+  background-color: rgb(5, 90, 90);
+}
+
+.form-switch{
+  margin-top: 20px;
+  color: white;
+}
+
+.form-switch button{
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(5, 90, 90);
+}
+
+.form-switch button:hover{
+  text-decoration: underline;
 }
