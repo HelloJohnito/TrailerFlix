@@ -44,17 +44,17 @@
   background-color: rgb(5, 90, 90);
 }
 
-.form-switch{
+.form-demo{
   margin-top: 20px;
   color: white;
 }
 
-.form-switch button{
+.form-demo button{
   margin-left: 10px;
   font-size: 16px;
-  color: rgb(5, 90, 90);
+  color: #FF5A5F;
 }
 
-.form-switch button:hover{
+.form-demo button:hover{
   text-decoration: underline;
 }

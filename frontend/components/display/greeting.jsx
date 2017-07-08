@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SessionFormContainer from '../session/sessionFormContainer';
 import Modal from 'react-modal';
-import ModalStyle from './modalStyle';
+import ModalStyleGreeting from './modalStyleGreeting';
 
 
 
@@ -44,7 +44,7 @@ class Greeting extends Component{
             contentLabel="modal-greeting"
             isOpen={this.state.modalOpen}
             onRequestClose={this.onModalClose}
-            style={ModalStyle}>
+            style={ModalStyleGreeting}>
               <button className="modal-close" onClick={this.onModalClose}>X</button>
               {content}
           </Modal>
@@ -64,6 +64,3 @@ class Greeting extends Component{
 }
 
 export default Greeting;
-
-
-// <Link to={"/user"} className="nav-button">{this.props.currentUser.username}</Link>

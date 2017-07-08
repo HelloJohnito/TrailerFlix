@@ -54,8 +54,10 @@ router.get('/:resource', function(req, res, next){
 
 //grab one video from the video model
 router.get('/:resource/:id', function(req, res, next){
+  console.log("enter")
   var resource = req.params.resource;
   var id = req.params.id;
+  console.log(id)
   var controller = Controllers[resource];
 
   if(controller === null){
