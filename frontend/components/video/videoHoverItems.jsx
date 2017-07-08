@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 import ModalStyleDetail from './modalStyleDetail';
-import VideoDetail from './videoDetail';
+import VideoDetailContainer from './VideoDetailContainer';
 
 
 class VideoHoverItems extends Component {
@@ -45,7 +45,7 @@ class VideoHoverItems extends Component {
           onRequestClose={this.closeModal}
           style={ModalStyleDetail}>
             <button className="modal-close" onClick={this.closeModal}>X</button>
-          <VideoDetail video ={this.props.video} user={this.props.user}/>
+          <VideoDetailContainer video ={this.props.video} user={this.props.user}/>
         </Modal>
       </div>
     );
