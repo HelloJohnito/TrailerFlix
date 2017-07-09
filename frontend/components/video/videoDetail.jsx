@@ -10,7 +10,13 @@ class VideoDetail extends Component {
 
   addToFavorite(e){
     e.preventDefault();
-    console.log("Yes");
+
+    if(this.props.user){
+      let request = {user: this.props.user, video: this.props.video};
+      this.props.addFavorite(request);
+    } else {
+      console.log("You need to log in first");
+    }
   }
 
   render(){

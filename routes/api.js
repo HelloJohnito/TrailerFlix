@@ -4,6 +4,7 @@ var Controllers = require("../controllers");
 var User = require("../models/user");
 var passport = require('passport');
 
+
 // check if user is logged in
 router.get('/verify', function(req, res,next){
   if(req.isAuthenticated()){
@@ -54,10 +55,8 @@ router.get('/:resource', function(req, res, next){
 
 //grab one video from the video model
 router.get('/:resource/:id', function(req, res, next){
-  console.log("enter")
   var resource = req.params.resource;
   var id = req.params.id;
-  console.log(id)
   var controller = Controllers[resource];
 
   if(controller === null){
@@ -145,11 +144,44 @@ router.post('/:resource', function(req,res,next){
     let user = {};
     user.username = result.username;
     user.id = result._id;
+    user.favorite = result.favorite;
     res.json({
       confirmation: 'success',
       result: user
     });
   });
+});
+
+
+router.patch('/:resource', function(req, res, next){
+  var resource = req.params.resource;
+
+  // add video to user's favorite array.
+  if(resource === "addFavorite"){
+    let user = req.query.user;
+    let video = req.query.video;
+    user = JSON.parse(user);
+    video = JSON.parse(video);
+
+    //find the user
+    Controllers['user'].findById(user._id, function(err, foundUser){
+      if(err){
+        res.json({
+          confirmation: 'fail',
+          message: err
+        });
+        return;
+      }
+
+      foundUser.favorite.push(video);
+      foundUser.save();
+      res.json({
+        confirmation: "success",
+        result: foundUser
+      });
+      return;
+    });
+  }
 });
 
 router.delete('/logout', function(req, res){

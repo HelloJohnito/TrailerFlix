@@ -6,8 +6,8 @@ import VideoDetailContainer from './VideoDetailContainer';
 
 
 class VideoHoverItems extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
