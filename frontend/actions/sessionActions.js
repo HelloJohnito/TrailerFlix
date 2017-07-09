@@ -50,6 +50,17 @@ export const verify = request => dispatch => (
   }
 ));
 
+export const addFavorite = request => dispatch => (
+  APIUtil.addFavorite(request).then(response => {
+    console.log(response);
+    if(response.data.confirmation === "success"){
+      dispatch(receiveUser(response.data.result));
+    }
+    else {
+      dispatch(receiveError(response.data.message));
+    }
+  }
+));
 
 export const receiveUser = response => ({
   type: RECEIVE_USER,

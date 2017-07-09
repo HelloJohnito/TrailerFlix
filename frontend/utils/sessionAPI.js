@@ -16,16 +16,24 @@ export const login = (user) => {
   });
 };
 
-export const logout= (user) => {
+export const logout = (user) => {
   return axios({
     method: 'DELETE',
     url: '/api/logout',
   });
 };
 
-export const verify= (user) => {
+export const verify = (user) => {
   return axios({
     method: 'GET',
     url: '/api/verify',
+  });
+};
+
+export const addFavorite = (request) => {
+  return axios({
+    method: 'PATCH',
+    url: '/api/addFavorite',
+    params: request
   });
 };

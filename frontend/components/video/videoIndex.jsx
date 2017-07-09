@@ -10,6 +10,7 @@ class VideoIndex extends Component{
 
   componentDidMount(){
     this.props.fetchAllVideos();
+    this.props.verify();
   }
 
   render(){
@@ -22,42 +23,42 @@ class VideoIndex extends Component{
       <div>
         <div className="video-category-container">
           <div className="video-category-title">Action</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Comedy</div>
-          <VideoSlider video = {this.props.video.comedy} />
+          <VideoSlider video = {this.props.video.comedy} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Documentary</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Family</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Fantasy</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Horror</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Mystery</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
         <div className="video-category-container">
           <div className="video-category-title">Romance</div>
-          <VideoSlider video = {this.props.video.action} />
+          <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>
 
       </div>

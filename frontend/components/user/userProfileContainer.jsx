@@ -1,20 +1,20 @@
 import { connect } from 'react-redux';
-import { fetchAllVideos } from '../../actions/videoActions';
+import UserProfile from './userProfile';
 import { verify } from '../../actions/sessionActions';
-import VideoIndex from './videoIndex';
 
 const mapStateToProps = (state, ownProps) => {
   return({
-    user: state.session,
-    video: state.video
+    user: state.session.currentUser,
+    history: ownProps.history
   });
 };
 
+
 const mapDispatchToProps = (dispatch, ownProps) => {
   return ({
-    fetchAllVideos: () => dispatch(fetchAllVideos()),
     verify: () => dispatch(verify())
   });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(VideoIndex);
+
+export default connect(mapStateToProps, mapDispatchToProps)(UserProfile);

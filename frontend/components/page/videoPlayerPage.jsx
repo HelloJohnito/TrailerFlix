@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import Navbar from '../display/nav';
 import VideoPlayerContainer from '../video/VideoPlayerContainer';
 
 

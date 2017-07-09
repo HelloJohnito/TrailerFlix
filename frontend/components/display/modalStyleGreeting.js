@@ -1,4 +1,4 @@
-const ModalStyle = {
+const ModalStyleGreeting = {
   overlay : {
     position        : 'fixed',
     top             : 0,
@@ -20,4 +20,4 @@ const ModalStyle = {
   }
 };
 
-export default ModalStyle;
+export default ModalStyleGreeting;

@@ -59,7 +59,7 @@ class SessionForm extends Component {
 
         </form>
 
-        <h1 className="form-switch"> Don't hav an account? Try the
+        <h1 className="form-demo"> Don't have an account? Try the
           <button className=""> DEMO ACCOUNT</button>
         </h1>
 
