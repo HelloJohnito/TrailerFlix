@@ -40,7 +40,7 @@ class Greeting extends Component{
 
 
   render(){
-    let content = (this.state.login) ? <SessionFormContainer formType="login" history={this.props.history}/> : <SessionFormContainer formType="signup" history={this.props.history}/>;
+    let content = (this.state.login) ? <SessionFormContainer formType="login"/> : <SessionFormContainer formType="signup"/>;
 
     if(!this.props.currentUser){
       return(

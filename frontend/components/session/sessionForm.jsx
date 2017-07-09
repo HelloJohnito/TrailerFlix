@@ -34,18 +34,21 @@ class SessionForm extends Component {
   handleSubmit(e){
     e.preventDefault();
     this.props.processForm(this.state);
-    this.props.history.push('/video');
   }
 
   render(){
-
     let title = (this.props.path === "signup") ? "sign up" : "log in";
+
+    let error;
+    if(this.props.error){
+      error = <h1 className="session-error-message">{this.props.error.message}</h1>
+    }
 
     return(
       <div className="session-background">
         <form className="session-form" onSubmit={this.handleSubmit}>
           <label>{title}</label>
-
+            {error}
             <label> Username</label>
               <input type="text" placeholder="Username" onChange={this.handleUpdate("username")}></input>
 
@@ -68,4 +71,4 @@ class SessionForm extends Component {
   }
 }
 
-export default SessionForm;
+export default withRouter(SessionForm);

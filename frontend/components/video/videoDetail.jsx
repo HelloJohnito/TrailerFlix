@@ -12,9 +12,15 @@ class VideoDetail extends Component {
     e.preventDefault();
 
     if(this.props.user){
+      let self = this;
       let request = {user: this.props.user, video: this.props.video};
-      this.props.addFavorite(request);
-      this.props.history.push("/user");
+      setTimeout(function(){
+        self.props.addFavorite(request);
+      });
+
+      setTimeout(function(){
+        self.props.history.push("/user");
+      });
     } else {
       console.log("You need to log in first");
     }
