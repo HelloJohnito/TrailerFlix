@@ -15938,7 +15938,7 @@ var VideoDetail = function (_Component) {
     value: function render() {
 
       var addFavButton = void 0;
-      if (this.props.formType === "videoIndex") {
+      if (this.props.formType === "videoIndex" && this.props.user) {
         addFavButton = _react2.default.createElement(
           'button',
           { onClick: this.addToFavorite },

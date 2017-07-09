@@ -29,7 +29,7 @@ class VideoDetail extends Component {
   render(){
 
     let addFavButton;
-    if(this.props.formType === "videoIndex"){
+    if(this.props.formType === "videoIndex" && this.props.user){
       addFavButton = <button onClick={this.addToFavorite}>Add to Favorite</button>;
     }
 
