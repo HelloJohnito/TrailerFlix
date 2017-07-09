@@ -21,6 +21,12 @@ class VideoDetail extends Component {
   }
 
   render(){
+
+    let addFavButton;
+    if(this.props.formType === "videoIndex"){
+      addFavButton = <button onClick={this.addToFavorite}>Add to Favorite</button>;
+    }
+
     return(
       <div className="video-detail-container flex">
         <div className="video-detail-left">
@@ -33,7 +39,7 @@ class VideoDetail extends Component {
           </div>
           <div className="">
             <Link to={`/video/${this.props.video._id}`} className="">Play Trailer</Link>
-            <button onClick={this.addToFavorite}>Add to Favorite</button>
+            {addFavButton}
           </div>
         </div>
       </div>

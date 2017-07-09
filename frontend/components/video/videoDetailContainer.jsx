@@ -4,10 +4,14 @@ import { fetchVideoById } from '../../actions/videoActions';
 import { addFavorite } from '../../actions/sessionActions';
 
 
-const mapStateToProps = (state, ownProps) => ({
-  user: ownProps.user.currentUser,
-  video: ownProps.video
-});
+const mapStateToProps = (state, ownProps) => {
+
+  return({
+    user: ownProps.user.currentUser,
+    video: ownProps.video,
+    formType: ownProps.formType
+  });
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return({

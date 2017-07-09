@@ -11,7 +11,7 @@ class ProfilePage extends Component{
     return(
       <div>
         <NavbarContainer history={this.props.history}/>
-        <UserProfileContainer history={this.props.history} />
+        <UserProfileContainer />
       </div>
     );
   }

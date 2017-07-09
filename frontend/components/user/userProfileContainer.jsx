@@ -4,8 +4,7 @@ import { verify } from '../../actions/sessionActions';
 
 const mapStateToProps = (state, ownProps) => {
   return({
-    user: state.session.currentUser,
-    history: ownProps.history
+    user: state.session.currentUser
   });
 };
 

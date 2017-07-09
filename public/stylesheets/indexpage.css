@@ -88,7 +88,8 @@
 }
 
 .video-detail-button-container button{
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 20px
 }
 
 .video-detail-button-container button:hover{
