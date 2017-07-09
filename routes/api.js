@@ -162,9 +162,12 @@ router.patch('/:resource', function(req, res, next){
     let video = req.query.video;
     user = JSON.parse(user);
     video = JSON.parse(video);
+    let userId;
+
+    userId = (user.id) ? user.id : user._id;
 
     //find the user
-    Controllers['user'].findById(user._id, function(err, foundUser){
+    Controllers['user'].findById(userId, function(err, foundUser){
       if(err){
         res.json({
           confirmation: 'fail',
@@ -172,6 +175,7 @@ router.patch('/:resource', function(req, res, next){
         });
         return;
       }
+      // get the actual video
 
       foundUser.favorite.push(video);
       foundUser.save();

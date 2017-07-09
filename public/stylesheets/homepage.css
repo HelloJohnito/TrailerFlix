@@ -50,7 +50,7 @@
   margin: 35px 20px 35px 0;
 }
 
-.nav-loggedin h1{
+.nav-loggedin a{
   font-size: 20px;
   margin-top: 40px;
   margin-right: 40px;

@@ -25,7 +25,6 @@ class VideoHoverItems extends Component {
     this.setState({modalOpen: false});
   }
 
-
   render(){
     return(
       <div className="video-thumbnail">

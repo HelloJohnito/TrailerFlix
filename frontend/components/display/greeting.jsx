@@ -27,10 +27,17 @@ class Greeting extends Component{
   }
 
   handleLogOut(){
-    this.props.logout();
+    let self = this;
     this.setState({modalOpen: false});
-    this.props.history.push("/");
+
+    setTimeout(function(){
+      self.props.logout();
+    });
+    setTimeout(function(){
+      self.props.history.push("/");
+    });
   }
+
 
   render(){
     let content = (this.state.login) ? <SessionFormContainer formType="login" history={this.props.history}/> : <SessionFormContainer formType="signup" history={this.props.history}/>;
@@ -55,7 +62,7 @@ class Greeting extends Component{
       return(
         <div className="nav-loggedin flex">
           <img className="nav-user-icon" src="https://res.cloudinary.com/deh9l9lyq/image/upload/v1499474794/user-icon_g4hecp.png"></img>
-          <h1>{this.props.currentUser.username}</h1>
+          <Link to={'/user'}>{this.props.currentUser.username}</Link>
           <button onClick={this.handleLogOut} className="nav-button">Log Out</button>
         </div>
       );

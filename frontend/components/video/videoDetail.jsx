@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 
 class VideoDetail extends Component {
@@ -14,13 +14,13 @@ class VideoDetail extends Component {
     if(this.props.user){
       let request = {user: this.props.user, video: this.props.video};
       this.props.addFavorite(request);
+      this.props.history.push("/user");
     } else {
       console.log("You need to log in first");
     }
   }
 
   render(){
-    console.log(this.props);
     return(
       <div className="video-detail-container flex">
         <div className="video-detail-left">
@@ -42,4 +42,4 @@ class VideoDetail extends Component {
 }
 
 
-export default VideoDetail;
+export default withRouter(VideoDetail);

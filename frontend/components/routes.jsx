@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import HomePage from './page/homepage';
 import IndexPage from './page/indexpage';
 import VideoPlayerPage from './page/VideoPlayerPage';
+import ProfilePage from './page/profilepage';
 
 import SessionFormContainer from './session/sessionFormContainer';
 
@@ -23,6 +24,7 @@ class Routes extends Component {
           <Route exact path='/login' component={ SessionFormContainer }/>
           <Route exact path="/video" component={ IndexPage }/>
           <Route path="/video/:videoId" component={ VideoPlayerPage }/>
+          <Route path="/user" component={ ProfilePage }/>
         </Switch>
       </div>
     );
