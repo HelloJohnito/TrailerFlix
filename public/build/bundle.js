@@ -14912,6 +14912,11 @@ var Greeting = function (_Component) {
       });
     }
   }, {
+    key: 'capitalize',
+    value: function capitalize(name) {
+      return name[0].toUpperCase() + name.substr(1);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var content = this.state.login ? _react2.default.createElement(_sessionFormContainer2.default, { formType: 'login' }) : _react2.default.createElement(_sessionFormContainer2.default, { formType: 'signup' });
@@ -14953,7 +14958,7 @@ var Greeting = function (_Component) {
           _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/user' },
-            this.props.currentUser.username
+            this.capitalize(this.props.currentUser.username)
           ),
           _react2.default.createElement(
             'button',

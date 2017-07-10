@@ -175,7 +175,13 @@ router.patch('/:resource', function(req, res, next){
         });
         return;
       }
-      // get the actual video
+
+      for(let i = 0; i < foundUser.favorite.length; i++){
+        let favVids = foundUser.favorite[i];
+        if(favVids._id.toString() === video._id){
+          return;
+        }
+      }
 
       foundUser.favorite.push(video);
       foundUser.save();

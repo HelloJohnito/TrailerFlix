@@ -38,6 +38,9 @@ class Greeting extends Component{
     });
   }
 
+  capitalize(name){
+    return name[0].toUpperCase() + name.substr(1);
+  }
 
   render(){
     let content = (this.state.login) ? <SessionFormContainer formType="login"/> : <SessionFormContainer formType="signup"/>;
@@ -62,7 +65,7 @@ class Greeting extends Component{
       return(
         <div className="nav-loggedin flex">
           <img className="nav-user-icon" src="https://res.cloudinary.com/deh9l9lyq/image/upload/v1499474794/user-icon_g4hecp.png"></img>
-          <Link to={'/user'}>{this.props.currentUser.username}</Link>
+          <Link to={'/user'}>{this.capitalize(this.props.currentUser.username)}</Link>
           <button onClick={this.handleLogOut} className="nav-button">Log Out</button>
         </div>
       );
