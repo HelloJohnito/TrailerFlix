@@ -8902,7 +8902,7 @@ var ModalStyleDetail = {
     backgroundColor: '#2a2a2b',
     padding: '20px',
     zIndex: 11,
-    width: '80%',
+    width: '800px',
     height: '500px'
   }
 };
@@ -14939,7 +14939,7 @@ var Greeting = function (_Component) {
               style: _modalStyleGreeting2.default },
             _react2.default.createElement(
               'button',
-              { className: 'modal-close', onClick: this.onModalClose },
+              { className: 'modal-close-session', onClick: this.onModalClose },
               'X'
             ),
             content
@@ -16092,7 +16092,7 @@ var VideoHoverItems = function (_Component) {
             style: _modalStyleDetail2.default },
           _react2.default.createElement(
             'button',
-            { className: 'modal-close', onClick: this.closeModal },
+            { className: 'modal-close-detail', onClick: this.closeModal },
             'X'
           ),
           _react2.default.createElement(_VideoDetailContainer2.default, { video: this.props.video, user: this.props.user, formType: "videoIndex" })

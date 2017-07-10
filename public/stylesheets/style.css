@@ -15,3 +15,14 @@
 .display-none{
   display: none;
 }
+
+.modal-close-session{
+  color: rgb(255, 90, 95);
+  margin-left: 315px;
+}
+
+.modal-close-detail{
+  color: rgb(255, 90, 95);
+  position: absolute;
+  right: 28px;
+}

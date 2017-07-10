@@ -52,7 +52,7 @@ class Greeting extends Component{
             isOpen={this.state.modalOpen}
             onRequestClose={this.onModalClose}
             style={ModalStyleGreeting}>
-              <button className="modal-close" onClick={this.onModalClose}>X</button>
+              <button className="modal-close-session" onClick={this.onModalClose}>X</button>
               {content}
           </Modal>
         </div>

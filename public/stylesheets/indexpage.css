@@ -105,10 +105,10 @@
   min-width: 400px;
 }
 
-.video-detail-container h1{
+.video-detail-right h1{
   color: white;
   font-size: 25px;
-  margin-bottom: 15px;
+  margin: 6px 0 15px 0;
 }
 
 .video-detail-right-description-container{
@@ -119,6 +119,7 @@
 .video-detail-right-description-container p{
   font-size: 15px;
   color: white;
+  width: 95%;
   word-wrap: break-word;
 }
 
