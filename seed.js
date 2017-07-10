@@ -156,6 +156,179 @@ var videoData = [
     comments: []
   },
   {
+    name: "Hot Fuzz",
+    youtube_id: "ayTnvVpj9t4",
+    img: "http://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499661230/hotfuzz_tb9ohd.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "comedy",
+    comments: []
+  },
+  {
+    name: "Bad Boys 2",
+    youtube_id: "hsuKq5pNOcM",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499661235/badboys_homvtl.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "comedy",
+    // releaseDate: Date.now,
+    comments: []
+  },
+  {
+    name: "Ride Along 2",
+    youtube_id: "iWfmmwdCHTg",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499661239/rideAlong_fsbtkk.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "comedy",
+    comments: []
+  },
+  {
+    name: "Food Inc.",
+    youtube_id: "eHJiNC_7wuw",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662021/food_oqsjzw.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "The Imposter",
+    youtube_id: "yDjpnpzw4GY",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662023/imposter_crq2gx.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "The Inside Job",
+    youtube_id: "FzrBurlJUNk",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662026/inside_job_ya2zth.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "Jiro Dreams of Sushi",
+    youtube_id: "buF540VBwAE",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662029/jiro_ykltsx.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "Man on Wire",
+    youtube_id: "EIawNRm9NWM",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662032/manonwire_b8xmwd.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "March of the Penguins",
+    youtube_id: "L7tWNwhSocE",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662035/march_of_the_penguins_l2kjyk.jpg",
+    description: "yiihair",
+    rating: 5,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "Super Size Me",
+    youtube_id: "LOvrkkj_T-I",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662038/supersizeme_spghal.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "Documentary",
+    comments: []
+  },
+  {
+    name: "Beauty and the Beast",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662847/Beauty-and-the-Beast-poster2_pbbayd.png",
+    description: "yiihair",
+    rating: 4,
+    category: "",
+    comments: []
+  },
+  {
+    name: "Despicable Me 3",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662848/despicable_me_three_chii8d.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "Finding Dory",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662851/finding_dory_oyhxzt.jpg",
+    description: "yiihair",
+    rating: 2,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "Frozen",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662854/frozen_ksu4xv.jpg",
+    description: "yiihair",
+    rating: 5,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "Lego Batman Movie",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662857/lego_batman_movie_ujbkrw.jpg",
+    description: "yiihair",
+    rating: 4,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "Moana",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662860/moana_ndxbe3.jpg",
+    description: "yiihair",
+    rating: 2,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "Sherk 3",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662862/sherk_mlfjtr.jpg",
+    description: "yiihair",
+    rating: 5,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "The Boss Baby",
+    youtube_id: "",
+    img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662866/thebossbaby_aku5dv.jpg",
+    description: "yiihair",
+    rating: 3,
+    category: "Family",
+    comments: []
+  },
+  {
+    name: "",
+    youtube_id: "",
+    img: "",
+    description: "yiihair",
+    rating: 3,
+    category: "",
+    comments: []
+  },
+
+  {
     name: "romance",
     youtube_id: "twhh",
     img: "imageurl",
@@ -177,8 +350,7 @@ function seedDB(){
   //  }
   //  console.log("removed Users!");
   // });
-
-  //REMOVE
+  //
   // Video.remove({}, function(err){
   //   if(err){
   //     console.log(err);
@@ -197,6 +369,8 @@ function seedDB(){
 
 
   //SetUp
+
+
   // Category.create({num: 1}, function(err, category){
   //   if(err){
   //     console.log(err);
@@ -205,8 +379,9 @@ function seedDB(){
   //   console.log("------added category-----");
   //   console.log(category);
   // });
-  //
-  //
+
+
+
   // videoData.forEach(function(video){
   //   Video.create(video, function(err, createdVideo){
   //     if(err){
@@ -225,6 +400,44 @@ function seedDB(){
   //   });
   // });
 
+
 }
 
 module.exports = seedDB;
+
+
+
+
+
+// var randomNums = {1: true, 4: true, 8: true, 14: true, 19: true};
+//
+// for(let i = 0; i < videoData.length; i++){
+//   let video = videoData[i];
+//   Video.create(video, function(err, createdVideo){
+//     if(err){
+//       console.log(err);
+//       return;
+//     }
+//     Category.findOne({num: 1}, function(err1, category){
+//       if(err1){
+//         console.log("error when pushing video into category");
+//         return;
+//       }
+//       category[createdVideo.category].push(createdVideo);
+//       category.save();
+//     });
+//     console.log("Video was created");
+//   });
+//
+//   if(randomNums[i]){
+//     User.findOne({username: "john"}, function(err2, user){
+//       if(err2){
+//         console.log("error when pushing video into user");
+//         return;
+//       }
+//       console.log("pushing video into user");
+//       user.favorite.push(video);
+//       user.save();
+//     });
+//   }
+// }
