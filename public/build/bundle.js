@@ -8967,6 +8967,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
     processForm: function processForm(userInfo) {
       return dispatch(_processForm(userInfo));
+    },
+    login: function login(userInfo) {
+      return dispatch((0, _sessionActions.login)(userInfo));
     }
   };
 };
@@ -15507,6 +15510,7 @@ var SessionForm = function (_Component) {
       password: ""
     };
 
+    _this.handleDemo = _this.handleDemo.bind(_this);
     _this.handleSubmit = _this.handleSubmit.bind(_this);
     return _this;
   }
@@ -15531,6 +15535,15 @@ var SessionForm = function (_Component) {
       return function (e) {
         return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
       };
+    }
+  }, {
+    key: 'handleDemo',
+    value: function handleDemo(e) {
+      e.preventDefault();
+      this.props.login({
+        username: "john",
+        password: "password"
+      });
     }
   }, {
     key: 'handleSubmit',
@@ -15585,10 +15598,10 @@ var SessionForm = function (_Component) {
         _react2.default.createElement(
           'h1',
           { className: 'form-demo' },
-          ' Don\'t have an account? Try the',
+          ' You can also log in with',
           _react2.default.createElement(
             'button',
-            { className: '' },
+            { className: '', onClick: this.handleDemo },
             ' DEMO ACCOUNT'
           )
         )

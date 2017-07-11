@@ -11,6 +11,7 @@ class SessionForm extends Component {
       password: ""
     };
 
+    this.handleDemo = this.handleDemo.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -30,6 +31,13 @@ class SessionForm extends Component {
     );
   }
 
+  handleDemo(e){
+    e.preventDefault();
+    this.props.login({
+      username: "john",
+      password: "password"
+    });
+  }
 
   handleSubmit(e){
     e.preventDefault();
@@ -62,8 +70,8 @@ class SessionForm extends Component {
 
         </form>
 
-        <h1 className="form-demo"> Don't have an account? Try the
-          <button className=""> DEMO ACCOUNT</button>
+        <h1 className="form-demo"> You can also log in with
+          <button className="" onClick={this.handleDemo}> DEMO ACCOUNT</button>
         </h1>
 
       </div>
