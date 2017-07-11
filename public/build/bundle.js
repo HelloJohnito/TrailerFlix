@@ -3099,7 +3099,6 @@ var verify = exports.verify = function verify(request) {
 var addFavorite = exports.addFavorite = function addFavorite(request) {
   return function (dispatch) {
     return APIUtil.addFavorite(request).then(function (response) {
-      console.log(response);
       if (response.data.confirmation === "success") {
         dispatch(receiveUser(response.data.result));
       } else {

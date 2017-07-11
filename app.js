@@ -13,6 +13,7 @@ var User = require('./models/user');
 //creates the mongodb
 var db = process.env.DATABASEURL || "mongodb://localhost/TrailerFlix";
 
+
 mongoose.connect(db, function(err, res){
   if(err){
     console.log("DB Connection Failed");
