@@ -2,21 +2,21 @@
 
 [Live Link](https://trailerflix.herokuapp.com/)
 
-TrailerFlix is a full stack web application designed for users to watch their favorite movie trailers. TrailerFlix incorporates React and Redux framework for the frontend flow and utilizes Node, Express, and Mongoose database for the backend.
+TrailerFlix is a full stack web application designed for users to watch their favorite movie trailers. TrailerFlix incorporates React and Redux framework for the frontend flow and utilizes Node, Express, and MongoDB for the backend.
 
-TrailerFlix incorporates the MVC principal and utilizes Axios to make API calls from the frontend to the backend. From a user action, an api call is sent to the router of express and is directed to its respective controller. A function will then execute and extract the necessary data from the data base and send it back to the frontend where it will be display to the user.
+TrailerFlix incorporates the MVC principal and utilizes Axios to make API calls from the frontend to the backend. From a user action, an api call is sent to the router of express and is directed to its respective controller. A function will then execute and extract the necessary data from the data base and send it back to the frontend where it is displayed to the user.
 
 ## Features and Implementations
 
 ### Authentication
 
-On TrailerFlix, users are not required to log in. Anyone can browse and watch any movie trailers as they like. Users who decide to create an account and log in are allowed to save any movie trailers to their profile page and come back to them in the future.
+On TrailerFlix, users are not required to log in. Anyone can browse and watch any movie trailers as they like. Users who do decide to create an account and log in are allowed to save any movie trailers to their profile page and watch them in the future.
 
 For user authentication, I incorporated the famous PassportJS. PassportJS is an authentication middleware for Node.js that integrates a secure process that salts and hashes passwords before storing them into the database.   
 
-### Mongoose Date Base
+### MongoDB
 
-TrailerFlix utilizes Mongoose, a noSQL database. To fully take advantage of the noSQL features, I created a model called 'Category' and stored all the videos separated by category for efficient retrieval of data from the database.
+TrailerFlix utilizes MongoDB, a noSQL database. To fully take advantage of the noSQL features, I created a model called 'Category' and stored all the videos separated by category for efficient retrieval of data from the database.
 
 Sample code below:
 
@@ -63,9 +63,8 @@ render(){
 
 ### Save Favorite Movie Trailers
 
-Users are able to save their favorite movie trailers and view them at a later time.
+Users are able to save their favorite movie trailers and view them in their profile page.
 
 <p align="center">
     <img src="https://media.giphy.com/media/zRRtPaFEoefHa/giphy.gif" alt="Landing Page" />
 </p>
-<!-- http://gph.is/2tFslS9 -->
