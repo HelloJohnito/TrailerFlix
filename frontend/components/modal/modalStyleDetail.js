@@ -15,7 +15,7 @@ const ModalStyleDetail = {
     backgroundColor : '#2a2a2b',
     padding         : '20px',
     zIndex          :  11,
-    width           : '800px',
+    width           : '900px',
     height          : '500px',
   }
 };

@@ -36,7 +36,7 @@ class UserProfileItems extends Component {
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
           style={ModalStyleDetail}>
-            <button className="modal-close" onClick={this.closeModal}>X</button>
+            <button className="modal-close-detail" onClick={this.closeModal}>X</button>
           <VideoDetailContainer video ={this.props.video} user={this.props.user} formType={"userProfile"}/>
         </Modal>
       </li>

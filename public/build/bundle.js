@@ -8902,7 +8902,7 @@ var ModalStyleDetail = {
     backgroundColor: '#2a2a2b',
     padding: '20px',
     zIndex: 11,
-    width: '800px',
+    width: '900px',
     height: '500px'
   }
 };
@@ -15785,7 +15785,7 @@ var UserProfileItems = function (_Component) {
             style: _modalStyleDetail2.default },
           _react2.default.createElement(
             'button',
-            { className: 'modal-close', onClick: this.closeModal },
+            { className: 'modal-close-detail', onClick: this.closeModal },
             'X'
           ),
           _react2.default.createElement(_VideoDetailContainer2.default, { video: this.props.video, user: this.props.user, formType: "userProfile" })
@@ -15973,7 +15973,7 @@ var VideoDetail = function (_Component) {
             _react2.default.createElement(
               'p',
               null,
-              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+              this.props.video.description
             )
           ),
           _react2.default.createElement(
@@ -16200,7 +16200,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Documentary'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.documentary, user: this.props.user })
         ),
         _react2.default.createElement(
           'div',
@@ -16210,7 +16210,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Family'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.family, user: this.props.user })
         ),
         _react2.default.createElement(
           'div',
@@ -16220,7 +16220,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Fantasy'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.fantasy, user: this.props.user })
         ),
         _react2.default.createElement(
           'div',
@@ -16230,7 +16230,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Horror'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.horror, user: this.props.user })
         ),
         _react2.default.createElement(
           'div',
@@ -16240,7 +16240,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Mystery'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.mystery, user: this.props.user })
         ),
         _react2.default.createElement(
           'div',
@@ -16250,7 +16250,7 @@ var VideoIndex = function (_Component) {
             { className: 'video-category-title' },
             'Romance'
           ),
-          _react2.default.createElement(_videoslider2.default, { video: this.props.video.action, user: this.props.user })
+          _react2.default.createElement(_videoslider2.default, { video: this.props.video.romance, user: this.props.user })
         )
       );
     }

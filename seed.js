@@ -9,7 +9,7 @@ var videoData = [
     name: "The Avengers",
     youtube_id: "eOrNdBpGMv8",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/c_scale,q_auto:low,w_631/v1498430686/avenger_sairy7.jpg",
-    description: 'Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement, and Logistics Division), arrives at S.H.I.E.L.D. headquarters outside of Santa Fe, New Mexico, during an evacuation. The Tesseract, an energy source of unknown potential, has activated. It opens a portal through space and the exiled Norse god Loki (Tom Hiddleston) steps through, carrying a strange spear with a blue glowing tip. Loki takes the Tesseract and uses the spear to take control of the minds of several SHIELD personnel, including Dr. Erik Selvig (Stellan Skarsgård) , and Agent Clint "Hawkeye" Barton (Jeremy Renner), to aid him in his getaway. SHIELD personnel pull out of their base when an energy surge from the Tesseract causes the ground beneath the base to collapse and destroying it. A short pursuit of Loki fails to capture him.',
+    description: 'Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement, and Logistics Division), arrives at S.H.I.E.L.D. headquarters outside of Santa Fe, New Mexico, during an evacuation. The Tesseract, an energy source of unknown potential, has activated. It opens a portal through space and the exiled Norse god Loki (Tom Hiddleston) steps through, carrying a strange spear with a blue glowing tip. Loki takes the Tesseract and uses the spear to take control of the minds of several SHIELD personnel, including Dr. Erik Selvig (Stellan Skarsgård) , and Agent Clint "Hawkeye" Barton (Jeremy Renner), to aid him in his getaway.',
     rating: 4,
     category: "action",
     comments: []
@@ -117,7 +117,7 @@ var videoData = [
     name: "The Hang Over",
     youtube_id: "tcdUhdOlz9M",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1498431866/hangover_gfbtit.jpg",
-    description: "To celebrate his upcoming marriage to Tracy Garner, Doug Billings travels to Las Vegas with his best friends Phil Wenneck, Stuart 'Stu' Price, and Tracy's brother Alan, in Doug's future father-in-law's vintage Mercedes-Benz W111. They spend the night at Caesars Palace, where they relax in their hotel suite before celebrating with a few drinks on the hotel rooftop. The next morning, Phil, Stu, and Alan awaken to find they have no memory of the previous night, and Doug is nowhere to be found. Stu's tooth is in Alan's pocket, their suite is in a state of complete disarray, a tiger is in their bathroom, a chicken is in their living room, and a baby is in the closet, whom they name 'Carlos'. They find Doug's mattress impaled on a statue outside of Caesars Palace and when they ask for their Mercedes, the valet delivers an LVPD police cruiser.",
+    description: "To celebrate his upcoming marriage to Tracy Garner, Doug Billings travels to Las Vegas with his best friends Phil Wenneck, Stuart 'Stu' Price, and Tracy's brother Alan, in Doug's future father-in-law's vintage Mercedes-Benz W111. They spend the night at Caesars Palace, where they relax in their hotel suite before celebrating with a few drinks on the hotel rooftop. The next morning, Phil, Stu, and Alan awaken to find they have no memory of the previous night, and Doug is nowhere to be found. Stu's tooth is in Alan's pocket, their suite is in a state of complete disarray, a tiger is in their bathroom, a chicken is in their living room, and a baby is in the closet, whom they name 'Carlos'. They find Doug's mattress impaled on a statue outside of Caesars Palace.",
     rating: 4,
     category: "comedy",
     comments: []
@@ -153,7 +153,7 @@ var videoData = [
     name: "Bad Boys 2",
     youtube_id: "hsuKq5pNOcM",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499661235/badboys_homvtl.jpg",
-    description: "Eight years after the events of the first film, Miami Police Department (MPD) narcotics division detectives Marcus Burnett and Mike Lowrey are investigating the flow of highly-potent ecstasy into the city. Their surveillance of boats coming in from Cuba leads them to a Ku Klux Klan meeting and drug drop in a swamp docks outside Miami. The subsequent raid on the Klan members proves to be a disaster; malfunctioning radios delay back-up, causing a firefight wherein a number of the Klan are killed or injured and Mike accidentally shoots Marcus in the buttocks. Police arrest the surviving Klan members, who are revealed to be mere small-time buyers and not distributors. The incident leaves Marcus to further question if he still wants to partner with Mike, while Mike fears that Marcus may discover his new relationship with Marcus' sister, Syd.",
+    description: "Eight years after the events of the first film, Miami Police Department (MPD) narcotics division detectives Marcus Burnett and Mike Lowrey are investigating the flow of highly-potent ecstasy into the city. Their surveillance of boats coming in from Cuba leads them to a Ku Klux Klan meeting and drug drop in a swamp docks outside Miami. The subsequent raid on the Klan members proves to be a disaster; malfunctioning radios delay back-up, causing a firefight wherein a number of the Klan are killed or injured and Mike accidentally shoots Marcus in the buttocks. Police arrest the surviving Klan members, who are revealed to be mere small-time buyers and not distributors.",
     rating: 4,
     category: "comedy",
     comments: []
@@ -171,18 +171,18 @@ var videoData = [
     name: "Food Inc.",
     youtube_id: "eHJiNC_7wuw",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662021/food_oqsjzw.jpg",
-    description: "The current method of raw food production is largely a response to the growth of the fast food industry since the 1950s. The production of food overall has more drastically changed since that time than the several thousand years prior. Controlled primarily by a handful of multinational corporations, the global food production business - with an emphasis on the business - has as its unwritten goals production of large quantities of food at low direct inputs (most often subsidized) resulting in enormous profits, which in turn results in greater control of the global supply of food sources within these few companies. Health and safety (of the food itself, of the animals produced themselves, of the workers on the assembly lines, and of the consumers actually eating the food) are often overlooked by the companies, and are often overlooked by government in an effort to provide cheap food regardless of these negative consequences.",
+    description: "The current method of raw food production is largely a response to the growth of the fast food industry since the 1950s. The production of food overall has more drastically changed since that time than the several thousand years prior. Controlled primarily by a handful of multinational corporations, the global food production business - with an emphasis on the business - has as its unwritten goals production of large quantities of food at low direct inputs (most often subsidized) resulting in enormous profits, which in turn results in greater control of the global supply of food sources within these few companies.",
     rating: 3,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
     name: "The Imposter",
     youtube_id: "yDjpnpzw4GY",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662023/imposter_crq2gx.jpg",
-    description: "Bourdin, who turned out to have a long record of impersonating various children, real or imaginary, embellished his claim to be Nicholas Barclay by alleging that he had been kidnapped for purposes of sexual abuse by Mexican, European, and U.S. military personnel and transported from Texas to Spain. His impersonation fooled several officials in Spain and the U.S., and he was apparently accepted by many of Barclay's family members, even though he was seven years older than Barclay, spoke with a French accent, and had brown eyes and dark hair rather than Barclay's blue eyes and blonde hair. The impersonation was eventually discovered as a result of the suspicions of a private investigator, Charles (Charlie) Parker, and an FBI agent, Nancy Fisher. Bourdin subsequently made a full confession, and in the film he elaborates on the various stages in his impersonation.",
+    description: "Bourdin, who turned out to have a long record of impersonating various children, real or imaginary, embellished his claim to be Nicholas Barclay by alleging that he had been kidnapped for purposes of sexual abuse by Mexican, European, and U.S. military personnel and transported from Texas to Spain. His impersonation fooled several officials in Spain and the U.S., and he was apparently accepted by many of Barclay's family members, even though he was seven years older than Barclay, spoke with a French accent, and had brown eyes and dark hair rather than Barclay's blue eyes and blonde hair. The impersonation was eventually discovered as a result of the suspicions of a private investigator, Charles (Charlie) Parker, and an FBI agent, Nancy Fisher.",
     rating: 4,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
@@ -191,7 +191,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662026/inside_job_ya2zth.jpg",
     description: "'Inside Job' provides a comprehensive analysis of the global financial crisis of 2008, which at a cost over $20 trillion, caused millions of people to lose their jobs and homes in the worst recession since the Great Depression, and nearly resulted in a global financial collapse. Through exhaustive research and extensive interviews with key financial insiders, politicians, journalists, and academics, the film traces the rise of a rogue industry which has corrupted politics, regulation, and academia. It was made on location in the United States, Iceland, England, France, Singapore, and China.",
     rating: 4,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
@@ -200,7 +200,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662029/jiro_ykltsx.jpg",
     description: "Jiro Dreams of Sushi is a 2011 American documentary film directed by David Gelb.[2] The film follows Jiro Ono (小野 二郎 Ono Jirō), an 85-year-old sushi master and owner of Sukiyabashi Jiro, a Michelin three-star restaurant. Sukiyabashi Jiro is a 10-seat, sushi-only restaurant located in a Tokyo subway station. Jiro Ono serves a tasting menu of roughly 20 courses, for a total of 30,000 Japanese yen ($281 USD). The film also profiles Jiro's two sons, both of whom are also sushi chefs. The younger son, Takashi (隆士), left Sukiyabashi Jiro to open a mirror image of his father's restaurant in Roppongi Hills. The 50-year-old elder son, Yoshikazu (禎一), obliged to succeed his father, still works for Jiro and is faced with the prospect of one day taking over the flagship restaurant.",
     rating: 4,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
@@ -209,7 +209,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662032/manonwire_b8xmwd.jpg",
     description: "On August 7, 1974, Philippe Petit, a French wire walker, juggler, and street performer days shy of his 25th birthday, spent 45 minutes walking, dancing, kneeling, and lying on a wire he and friends strung between the rooftops of the Twin Towers. Uses contemporary interviews, archival footage, and recreations to tell the story of his previous walks between towers of Notre Dame and of the Sydney Harbour Bridge, his passions and friendships, and the details of the night before the walk: getting cable into the towers, hiding from guards, and mounting the wire. It ends with observations of the profound changes the walk's success brought to Philippe and those closest to him.",
     rating: 3,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
@@ -218,25 +218,25 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662035/march_of_the_penguins_l2kjyk.jpg",
     description: "At the end of each Antarctic summer, the emperor penguins of the South Pole journey to their traditional breeding grounds in a fascinating mating ritual that is captured in this documentary by intrepid filmmaker Luc Jacquet. The journey across frozen tundra proves to be the simplest part of the ritual, as after the egg is hatched, the female must delicately transfer it to the male and make her way back to the distant sea to nourish herself and bring back food to her newborn chick.",
     rating: 5,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
     name: "Super Size Me",
     youtube_id: "LOvrkkj_T-I",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662038/supersizeme_spghal.jpg",
-    description: "Several legal suits have been brought against McDonald's Restaurants that they are knowingly selling food that is unhealthy. Some of the court decisions have stated that the plaintiffs would have a claim if they could prove that eating the food every day for every meal is dangerous. As such, documentarian Morgan Spurlock conducts an unscientific experiment using himself as the guinea pig: eat only McDonald's for thirty days, three meals a day. If he is asked by the clerk if he would like the meal super sized, he has to say yes. And by the end of the thirty days, he will have had to have eaten every single menu item at least once. Before starting the experiment, he is tested by three doctors - a general practitioner, a cardiologist and a gastroenterologist - who pronounce his general health to be outstanding. They will also monitor him over the thirty days to ensure that he is not placing his health into irreparable damage.",
+    description: "Several legal suits have been brought against McDonald's Restaurants that they are knowingly selling food that is unhealthy. Some of the court decisions have stated that the plaintiffs would have a claim if they could prove that eating the food every day for every meal is dangerous. As such, documentarian Morgan Spurlock conducts an unscientific experiment using himself as the guinea pig: eat only McDonald's for thirty days, three meals a day. If he is asked by the clerk if he would like the meal super sized, he has to say yes. And by the end of the thirty days, he will have had to have eaten every single menu item at least once. Before starting the experiment, he is tested by three doctors.",
     rating: 3,
-    category: "Documentary",
+    category: "documentary",
     comments: []
   },
   {
     name: "Beauty and the Beast",
     youtube_id: "e3Nl_TCQXuw",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662847/Beauty-and-the-Beast-poster2_pbbayd.png",
-    description: "yIn Rococo-era France, an enchantress disguised as a beggar arrives at a ball and offers the host, a coldhearted prince, a rose for shelter. When he refuses, she transforms him into a beast and his servants into household objects, and erases the castle from the memories of their loved ones. She casts a spell on the rose and warns the prince that, unless he learns to love another and earn their love in return before the last petal falls, he and his servants will lose their humanity forever. Years later, in the village of Villeneuve, Belle dreams of adventure and brushes off advances from Gaston, an arrogant former soldier. Lost in the forest, Belle's father Maurice seeks refuge in the Beast's castle, but the Beast imprisons him for stealing a rose. Belle ventures out in search for him and finds him locked in the castle dungeon. The Beast agrees to let her take Maurice's place.",
+    description: "yIn Rococo-era France, an enchantress disguised as a beggar arrives at a ball and offers the host, a coldhearted prince, a rose for shelter. When he refuses, she transforms him into a beast and his servants into household objects, and erases the castle from the memories of their loved ones. She casts a spell on the rose and warns the prince that, unless he learns to love another and earn their love in return before the last petal falls, he and his servants will lose their humanity forever. Years later, in the village of Villeneuve, Belle dreams of adventure and brushes off advances from Gaston, an arrogant former soldier. Lost in the forest, Belle's father Maurice seeks refuge in the Beast's castle, but the Beast imprisons him for stealing a rose.",
     rating: 4,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -245,7 +245,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662848/despicable_me_three_chii8d.jpg",
     description: "Following the previous film, Gru is now an agent for the Anti-Villain League (AVL) and he and his wife Lucy are sent to foil the plans of Balthazar Bratt, a supervillain who was a former child actor who portrayed a young supervillain in a popular television series before the show was cancelled as a result of his puberty, and his waning popularity led to him adopting his former persona to become an actual supervillain. Gru manages to stop Bratt from stealing a very expensive diamond, but is unable to capture him. As a result of constantly failing to capture Bratt, Gru and Lucy are fired from the AVL by it's new director Valerie Da Vinci.",
     rating: 3,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -254,16 +254,16 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662851/finding_dory_oyhxzt.jpg",
     description: "Dory, a regal blue tang, gets separated from her parents as a child. As she grows up, Dory attempts to search for them, but gradually forgets them due to her short-term memory loss disability. In the flashback of the previous film, Finding Nemo, she joins Marlin – a clownfish looking for his missing son Nemo – after accidentally swimming into him. One year later, Dory is living with Marlin and Nemo on their reef. One day, Dory has a flashback and remembers that she has parents. She decides to look for them, but her memory problem is an obstacle. She eventually remembers that they lived at the Jewel of Morro Bay across the ocean in California.",
     rating: 2,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
     name: "Frozen",
     youtube_id: "TbQm5doF_Uc",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662854/frozen_ksu4xv.jpg",
-    description: "Anna, a fearless optimist, sets off on an epic journey - teaming up with rugged mountain man Kristoff and his loyal reindeer Sven - to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna and Kristoff battle the elements in a race to save the kingdom. From the outside Anna's sister, Elsa looks poised, regal and reserved, but in reality, she lives in fear as she wrestles with a mighty secret-she was born with the power to create ice and snow. It's a beautiful ability, but also extremely dangerous. Haunted by the moment her magic nearly killed her younger sister Anna, Elsa has isolated herself, spending every waking minute trying to suppress her growing powers. Her mounting emotions trigger the magic, accidentally setting off an eternal winter that she can't stop. She fears she's becoming a monster.",
+    description: "Anna, a fearless optimist, sets off on an epic journey - teaming up with rugged mountain man Kristoff and his loyal reindeer Sven - to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna and Kristoff battle the elements in a race to save the kingdom. From the outside Anna's sister, Elsa looks poised, regal and reserved, but in reality, she lives in fear as she wrestles with a mighty secret-she was born with the power to create ice and snow. It's a beautiful ability, but also extremely dangerous.",
     rating: 5,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -272,7 +272,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662857/lego_batman_movie_ujbkrw.jpg",
     description: "Within the Lego Universe, Batman continues to protect Gotham City and fight crime. During his latest mission to stop the Joker from destroying the city, he hurts his arch-rival's feelings by telling him he is not as important in his life as he thinks he is, leading Joker to seek the ultimate revenge on him. The following day, Batman's alter ego, Bruce Wayne, attends the city's winter gala, which is celebrating both the retirement of Commissioner Gordon and the ascension of his daughter Barbara as the city's new police commissioner, only to be infuriated by Barbara's plans to restructure the police to function without the need of Batman. Without warning, Joker crashes the party with the city's other villains, all of whom surrender, with the exception of Harley Quinn, who disappears during the confusion.",
     rating: 4,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -281,7 +281,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662860/moana_ndxbe3.jpg",
     description: "yMoana Waialiki is a sea voyaging enthusiast and the only daughter of a chief in a long line of navigators. When her island's fishermen can't catch any fish and the crops fail, she learns that the demigod Maui caused the blight by stealing the heart of the goddess, Te Fiti. The only way to heal the island is to persuade Maui to return Te Fiti's heart, so Moana sets off on an epic journey across the Pacific. The film is based on stories from Polynesian mythology.",
     rating: 2,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -290,7 +290,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662862/sherk_mlfjtr.jpg",
     description: "When Fiona's father and King of Far Far Away passes away, the clumsy Shrek becomes the immediate successor of the throne. However, Shrek decides to find the legitimate heir Artie in a distant kingdom with his friends Donkey and Puss in Boots to be able return to his beloved house in the swamp with the pregnant Fiona. Meanwhile, the envious and ambitious Prince Charming joins the villains of the fairytales plotting a coup d'état to become the new king",
     rating: 5,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
@@ -299,25 +299,25 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499662866/thebossbaby_aku5dv.jpg",
     description: "Seven-year-old Tim Templeton has always been a boy of an overactive imagination, and for the past seven years, life was all peaches for him, getting all the love and affection from his caring parents. However, life will never be the same and Tim won't be the centre of attention anymore as the arrival of an improbable new brother named Boss Baby, dressed in a black suit complete with a tie and a briefcase, will shortly rob him of all love, as he takes over the whole Templetons' house. Nevertheless, although this may be true, soon, Tim and the new Boss in a diaper will need to put differences aside and join forces, as a sneaky scheme involving the head of Puppy Co. threatens to tilt the balance of power towards their insidiously adorable furry antagonists, not to mention that the next Pet Convention is in only two days.. Brothers, hurry up. ",
     rating: 3,
-    category: "Family",
+    category: "family",
     comments: []
   },
   {
     name: "Avatar",
     youtube_id: "5PSNL1qE6VY",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710631/avatar_qwupyr.jpg",
-    description: "When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid 'Navi' in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Navi people with the use of an 'avatar' identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.",
+    description: "When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid 'Navi' in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Navi people with the use of an 'avatar' identity.",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
     name: "Fantastic Beasts",
     youtube_id: "sGNnv_g9h4k",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710633/fantastic_beasts_and_where_to_find_them_ver15_rlbyqx.jpg",
-    description: "In 1926 the British wizard and 'magizoologist' Newt Scamander arrives by ship to New York en route to Arizona. He encounters Mary Lou Barebone, a No-Maj woman who leads the New Salem Philanthropic Society, which claims that witches and wizards are real and dangerous. As Newt listens to her speech, a Niffler (a small, mole-like creature with an obsessive desire to steal all things shiny) escapes from his magically expanded suitcase, which houses multiple magical creatures. As Newt attempts to capture the Niffler, he meets Jacob Kowalski, a No-Maj cannery worker and aspiring baker, and they accidentally swap suitcases. Demoted Auror Tina Goldstein arrests Newt for being an unregistered wizard and takes him to the Magical Congress of the United States of America (MACUSA) headquarters, hoping to regain her former position. However, Jacob's suitcase contains only baked goods, and Newt is released.",
+    description: "In 1926 the British wizard and 'magizoologist' Newt Scamander arrives by ship to New York en route to Arizona. He encounters Mary Lou Barebone, a No-Maj woman who leads the New Salem Philanthropic Society, which claims that witches and wizards are real and dangerous. As Newt listens to her speech, a Niffler (a small, mole-like creature with an obsessive desire to steal all things shiny) escapes from his magically expanded suitcase, which houses multiple magical creatures.",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
@@ -326,16 +326,16 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710636/harry_potter_and_the_sorcerers_stone_ver2_ofiq2k.jpg",
     description: "This is the tale of Harry Potter, an ordinary 11-year-old boy serving as a sort of slave for his aunt and uncle who learns that he is actually a wizard and has been invited to attend the Hogwarts School for Witchcraft and Wizardry. Harry is snatched away from his mundane existence by Hagrid, the grounds keeper for Hogwarts, and quickly thrown into a world completely foreign to both him and the viewer. Famous for an incident that happened at his birth, Harry makes friends easily at his new school. He soon finds, however, that the wizarding world is far more dangerous for him than he would have imagined, and he quickly learns that not all wizards are ones to be trusted.",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
     name: "The Hobbit",
     youtube_id: "JTSoD4BBCJc",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710639/hobbit_an_unexpected_journey_ver2_a61zdy.jpg",
-    description: "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's 'precious' ring that holds unexpected and useful qualities.",
+    description: "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum.",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
@@ -344,7 +344,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710642/lord_of_the_rings_the_return_of_the_king_pthqeh.jpg",
     description: "An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
@@ -353,16 +353,16 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710645/narnia_mtl27t.jpg",
     description: "Four children from the same family have to leave their town because of the bombings of WWII. A women and a professor take the children to their house. While playing a game of hide-and-seek, the youngest member of the family, Lucy, finds a wardrobe to hide in. She travels back and back into the wardrobe and finds a place named Narnia. After going in twice, the four children go in together for the last time. They battle wolves, meet talking animals, encounter an evil white witch and meet a magnificent lion named Aslan. Will this be the end of their journey to Narnia or will they stay?",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
     name: "Starwars Episode 7",
     youtube_id: "sGbxmsDFVnE",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499710650/starwars_azi8od.jpg",
-    description: "Three decades after the destruction of the second Death Star and the Galactic Civil War, the First Order has risen from the fallen Galactic Empire and seeks to eliminate the New Republic. The Resistance, backed by the Republic and led by General Leia Organa, opposes them while searching for her brother, Luke Skywalker. Resistance pilot Poe Dameron meets village elder Lor San Tekka on the planet Jakku to obtain a map to Luke's location. Stormtroopers commanded by the mysterious Kylo Ren destroy the village and capture Poe, while Ren kills Tekka. Poe's droid, BB-8, escapes with the map and encounters a scavenger named Rey near a junkyard settlement. Ren tortures Poe using the Force, and learns of BB-8. Reticent stormtrooper FN-2187 frees Poe, and they escape in a stolen TIE fighter; Poe dubs FN-2187 'Finn'",
+    description: "Three decades after the destruction of the second Death Star and the Galactic Civil War, the First Order has risen from the fallen Galactic Empire and seeks to eliminate the New Republic. The Resistance, backed by the Republic and led by General Leia Organa, opposes them while searching for her brother, Luke Skywalker. Resistance pilot Poe Dameron meets village elder Lor San Tekka on the planet Jakku to obtain a map to Luke's location. Stormtroopers commanded by the mysterious Kylo Ren destroy the village and capture Poe, while Ren kills Tekka. Poe's droid, BB-8, escapes with the map and encounters a scavenger named Rey near a junkyard settlement.",
     rating: 3,
-    category: "Fantasy",
+    category: "fantasy",
     comments: []
   },
   {
@@ -371,7 +371,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726080/insidious_xc6jft.jpg",
     description: "A married couple Josh (Patrick Wilson) and Renai (Rose Byrne), their sons Dalton (Ty Simpkins) and Foster (Andrew Astor), and infant daughter Cali have recently moved into a new home. One night, Dalton is drawn to the attic when he hears creaking noises and sees the door open by itself. He falls from a ladder while investigating and sees a figure in the shadows. Hearing his terrified screams, Renai and Josh rush to his aid and declare the attic 'off limits' to the children. The next day, Dalton falls into an inexplicable coma.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
@@ -380,7 +380,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726083/paranormal_activity_three_szg8fu.jpg",
     description: "The films are based around a family haunted by a demon that stalks, terrifies and ultimately murders several members of the family and other bystanders during the course of the films. The series makes use of production cameras set up and used like security cameras or other recording devices in an attempt to present the films as found footage.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
@@ -389,7 +389,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726087/ring_ienhej.jpg",
     description: "High school students Katie and Becca discuss an urban legend about a cursed videotape which kills anyone who watches it seven days later. Katie admits that she watched the tape with her boyfriend and two friends the previous week. That night, Katie is killed by an unseen force, leaving her face mysteriously disfigured. At Katie's funeral, her aunt Rachel, a Seattle journalist, is asked by Katie's mother, Ruth, to investigate her death. Rachel also discovers that Katie's boyfriend and her two friends were killed in bizarre accidents on the same night as Katie. After learning that they watched the cursed videotape at Shelter Mountain Inn, Rachel travels there and watches the tape, which contains gruesome and disturbing imagery. Afterwards, she receives a phone call from an unknown caller who utters 'seven days'.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
@@ -398,16 +398,16 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726091/Scream3-09_j2cgjk.jpg",
     description: "Cotton Weary, now living in Los Angeles and the host of a nationally syndicated television show, 100% Cotton, is called by Ghostface, who demands the whereabouts of Sidney Prescott, who has gone into hiding ever since the murders that took place at Windsor College three years ago. Cotton refuses to cooperate, and when Ghostface comes to his home, both Cotton and his girlfriend Christine are murdered.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
     name: "The Texas Chainsaw Massacre",
     youtube_id: "janre4HxsX4",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726094/texas_aaiefl.jpg",
-    description: "Sally Hardesty (Marilyn Burns) and her paraplegic brother, Franklin (Paul A. Partain), travel with three friends, Jerry (Allen Danziger), Kirk (William Vail), and Pam (Teri McMinn), to visit the grave of the Hardestys' grandfather to investigate reports of vandalism and grave robbing. Afterwards, they decide to visit the old Hardesty family homestead. Along the way, they pick up a hitchhiker (Edwin Neal) who talks about his family who worked at the old slaughterhouse. He borrows Franklin's pocket-knife and cuts himself, then takes a Polaroid picture of the others and demands money for it. When they refuse to pay, he burns the photo and slashes Franklin's arm with a straight razor. The group forces him out of the van and drive on. They stop at a gas station to refuel, but the proprietor (Jim Siedow) tells them that the pumps are empty.",
+    description: "Sally Hardesty (Marilyn Burns) and her paraplegic brother, Franklin (Paul A. Partain), travel with three friends, Jerry (Allen Danziger), Kirk (William Vail), and Pam (Teri McMinn), to visit the grave of the Hardestys' grandfather to investigate reports of vandalism and grave robbing. Afterwards, they decide to visit the old Hardesty family homestead. Along the way, they pick up a hitchhiker (Edwin Neal) who talks about his family who worked at the old slaughterhouse. He borrows Franklin's pocket-knife and cuts himself, then takes a Polaroid picture of the others and demands money for it. When they refuse to pay, he burns the photo and slashes Franklin's arm with a straight razor.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
@@ -416,16 +416,16 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726096/twenty_eight_days_later_fqlid0.jpg",
     description: "Animal activists invade a laboratory with the intention of releasing chimpanzees that are undergoing experimentation, infected by a virus -a virus that causes rage. The naive activists ignore the pleas of a scientist to keep the cages locked, with disastrous results. Twenty-eight days later, our protagonist, Jim, wakes up from a coma, alone, in an abandoned hospital. He begins to seek out anyone else to find London is deserted, apparently without a living soul. After finding a church, which had become inhabited by zombie like humans intent on his demise, he runs for his life. Selena and Mark rescue him from the horde and bring him up to date on the mass carnage and horror as all of London tore itself apart. This is a tale of survival and ultimately, heroics, with nice subtext about mankind's savage nature.",
     rating: 3,
-    category: "Horror",
+    category: "horror",
     comments: []
   },
   {
     name: "Memento",
     youtube_id: "0vS0E9bBSL0",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726626/memento_ver3_j1yl69.jpg",
-    description: "The film starts with the Polaroid photograph of a dead man. As the sequence plays backwards the photo reverts to its undeveloped state, entering the camera before the man is shot in the head. The film then continues, alternating between black and white and color sequences.The black and white sequences begin with Leonard Shelby, an insurance investigator, in a motel room speaking to an unseen and unknown caller. Leonard has anterograde amnesia and is unable to store recent memories, the result of an attack by two men. Leonard explains that he killed the attacker who raped and strangled his wife, but a second clubbed him and escaped. The police did not accept that there was a second attacker, but Leonard believes the attacker's name is John or James, with a last name starting with G. Leonard conducts his own investigation using a system of notes, Polaroids, and tattoos. From his occupation, Leonard recalls a fellow anterograde amnesiac: Sammy Jankis.",
+    description: "The film starts with the Polaroid photograph of a dead man. As the sequence plays backwards the photo reverts to its undeveloped state, entering the camera before the man is shot in the head. The film then continues, alternating between black and white and color sequences.The black and white sequences begin with Leonard Shelby, an insurance investigator, in a motel room speaking to an unseen and unknown caller. Leonard has anterograde amnesia and is unable to store recent memories, the result of an attack by two men. Leonard explains that he killed the attacker who raped and strangled his wife, but a second clubbed him and escaped.",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
@@ -434,7 +434,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726629/minority_report_d1yrtu.jpg",
     description: "In the year 2054 A.D. crime is virtually eliminated from Washington D.C. thanks to an elite law enforcing squad 'Precrime'. They use three gifted humans (called 'Pre-Cogs') with special powers to see into the future and predict crimes beforehand. John Anderton heads Precrime and believes the system's flawlessness steadfastly. However one day the Pre-Cogs predict that Anderton will commit a murder himself in the next 36 hours. Worse, Anderton doesn't even know the victim. He decides to get to the mystery's core by finding out the 'minority report' which means the prediction of the female Pre-Cog Agatha that 'might' tell a different story and prove Anderton innocent.",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
@@ -443,7 +443,7 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726632/oldboy-movie_zeizyr.jpg",
     description: "An average man is kidnapped and imprisoned in a shabby cell for 15 years without explanation. He then is released, equipped with money, a cellphone and expensive clothes. As he strives to explain his imprisonment and get his revenge, Oh Dae-Su soon finds out that his kidnapper has a greater plan for him and is set onto a path of pain and suffering in an attempt to uncover the motive of his mysterious tormentor.",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
@@ -452,25 +452,25 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726635/seven_a3cdtq.jpg",
     description: "A film about two homicide detectives' (Morgan Freeman and (Brad Pitt desperate hunt for a serial killer who justifies his crimes as absolution for the world's ignorance of the Seven Deadly Sins. The movie takes us from the tortured remains of one victim to the next as the sociopathic 'John Doe' (Kevin Spacey) sermonizes to Detectives Somerset and Mills -- one sin at a time. The sin of Gluttony comes first and the murderer's terrible capacity is graphically demonstrated in the dark and subdued tones characteristic of film noir. The seasoned and cultured but jaded Somerset researches the Seven Deadly Sins in an effort to understand the killer's modus operandi while the bright but green and impulsive Detective Mills (Pitt) scoffs at his efforts to get inside the mind of a killer...",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
     name: "Shutter Island",
     youtube_id: "5iaYLCiq5RM",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726638/shutter_island_co0twe.jpg",
-    description: "It's 1954, and up-and-coming U.S. marshal Teddy Daniels is assigned to investigate the disappearance of a patient from Boston's Shutter Island Ashecliffe Hospital. He's been pushing for an assignment on the island for personal reasons, but before long he wonders whether he hasn't been brought there as part of a twisted plot by hospital doctors whose radical treatments range from unethical to illegal to downright sinister. Teddy's shrewd investigating skills soon provide a promising lead, but the hospital refuses him access to records he suspects would break the case wide open. As a hurricane cuts off communication with the mainland, more dangerous criminals 'escape' in the confusion, and the puzzling, improbable clues multiply, Teddy begins to doubt everything - his memory, his partner, even his own sanity.",
+    description: "It's 1954, and up-and-coming U.S. marshal Teddy Daniels is assigned to investigate the disappearance of a patient from Boston's Shutter Island Ashecliffe Hospital. He's been pushing for an assignment on the island for personal reasons, but before long he wonders whether he hasn't been brought there as part of a twisted plot by hospital doctors whose radical treatments range from unethical to illegal to downright sinister. Teddy's shrewd investigating skills soon provide a promising lead, but the hospital refuses him access to records he suspects would break the case wide open. As a hurricane cuts off communication with the mainland, more dangerous criminals 'escape' in the confusion, and the puzzling, improbable clues multiply.",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
     name: "Source Code",
     youtube_id: "DiBVUulE_wo",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726641/source_code_d5jlal.jpg",
-    description: "Army Captain Colter Stevens finds himself working on a special program where his consciousness can be inserted into another human being. The only catch is can only be there for 8 minutes at any given time. That morning, a bomb exploded on a commuter train just outside Chicago. He occupies the body of teacher going to work on that train and is confused as to what he is doing or why he is there as his last memory is of flying his helicopter on a combat mission in Afghanistan. Those in charge of the program explain to him that there is a bomb on the train that must locate it. More importantly, he must identify the bomber as another bombing is expected later that day. He is also told however that he cannot change the past and can only gather information. As he develops a liking for his traveling companion Christina, he sets out to test that theory.",
+    description: "Army Captain Colter Stevens finds himself working on a special program where his consciousness can be inserted into another human being. The only catch is can only be there for 8 minutes at any given time. That morning, a bomb exploded on a commuter train just outside Chicago. He occupies the body of teacher going to work on that train and is confused as to what he is doing or why he is there as his last memory is of flying his helicopter on a combat mission in Afghanistan. Those in charge of the program explain to him that there is a bomb on the train that must locate it. More importantly, he must identify the bomber as another bombing is expected later that day.",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
@@ -479,14 +479,14 @@ var videoData = [
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499726644/usual_suspects_ver3_fm5jzc.jpg",
     description: "Following a truck hijack in New York, five conmen are arrested and brought together for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27 men dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?",
     rating: 3,
-    category: "Mystery",
+    category: "mystery",
     comments: []
   },
   {
     name: "A Walk to Remember",
     youtube_id: "EgdoQ8Oxu2E",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499727141/a-walk-to-remember-movie-poster-2002-1020196028_jzfnad.jpg",
-    description: "Set in North Carolina, popular and rebellious teenager Landon Carter is threatened with expulsion from school after he and his friends leave evidence of underage drinking on the school grounds, and seriously injure another student during a prank gone wrong. The head of the school gives Landon the choice of being expelled or atoning for his actions by tutoring fellow students and participating in the school play. During these functions, Landon notices Jamie Sullivan, a girl he has known since kindergarten and who has attended many of the same classes as him, and is also the local minister's daughter. Since he's one of the in-crowd, he has seldom paid any attention to Jamie, who wears modest dresses and owns only one sweater. Jamie is labeled an outsider and a geek. She makes no attempt to wear make-up or otherwise improve her looks or attract attention to herself.",
+    description: "Set in North Carolina, popular and rebellious teenager Landon Carter is threatened with expulsion from school after he and his friends leave evidence of underage drinking on the school grounds, and seriously injure another student during a prank gone wrong. The head of the school gives Landon the choice of being expelled or atoning for his actions by tutoring fellow students and participating in the school play. During these functions, Landon notices Jamie Sullivan, a girl he has known since kindergarten and who has attended many of the same classes as him, and is also the local minister's daughter.",
     rating: 3,
     category: "romance",
     comments: []
@@ -522,7 +522,7 @@ var videoData = [
     name: "The Notebook",
     youtube_id: "4M7LIcH8C9U",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499727152/the-notebook-poster_uh8d0e.jpg",
-    description: "In a nursing home, resident Duke reads a romance story for an old woman who has senile dementia with memory loss. In the late 1930s, wealthy seventeen year-old Allie Hamilton is spending summer vacation in Seabrook. Local worker Noah Calhoun meets Allie at a carnival and they soon fall in love with each other. One day, Noah brings Allie to an ancient house that he dreams of buying and restoring and they attempt to make love but get interrupted by their friend. Allie's parents do not approve of their romance since Noah belongs to another social class, and they move to New York with her. Noah writes 365 letters (A Year) to Allie, but her mother Anne Hamilton does not deliver them to her daughter. Three years later, the United States joins the World War II and Noah and his best friend Fin enlist in the army, and Allie works as an army nurse. She meets injured soldier Lon Hammond in the hospital.",
+    description: "In a nursing home, resident Duke reads a romance story for an old woman who has senile dementia with memory loss. In the late 1930s, wealthy seventeen year-old Allie Hamilton is spending summer vacation in Seabrook. Local worker Noah Calhoun meets Allie at a carnival and they soon fall in love with each other. One day, Noah brings Allie to an ancient house that he dreams of buying and restoring and they attempt to make love but get interrupted by their friend. Allie's parents do not approve of their romance since Noah belongs to another social class, and they move to New York with her. Noah writes 365 letters (A Year) to Allie, but her mother Anne Hamilton does not deliver them to her daughter.",
     rating: 3,
     category: "romance",
     comments: []
@@ -540,7 +540,7 @@ var videoData = [
     name: "Twilight",
     youtube_id: "fFLrRlPBg0A",
     img: "https://res.cloudinary.com/deh9l9lyq/image/upload/q_auto/v1499727159/twilight_p4elsu.jpg",
-    description: "Bella Swan has always been a little bit different. Never one to run with the crowd, Bella never cared about fitting in with the trendy, plastic girls at her Phoenix, Arizona high school. When her mother remarried and Bella chooses to live with her father in the rainy little town of Forks, Washington, she didn't expect much of anything to change. But things do change when she meets the mysterious and dazzlingly beautiful Edward Cullen. For Edward is nothing like any boy she's ever met. He's nothing like anyone she's ever met, period. He's intelligent and witty, and he seems to see straight into her soul. In no time at all, they are swept up in a passionate and decidedly unorthodox romance - unorthodox because Edward really isn't like the other boys. He can run faster than a mountain lion. He can stop a moving car with his bare hands. Oh, and he hasn't aged since 1918. Like all vampires, he's immortal.",
+    description: "Bella Swan has always been a little bit different. Never one to run with the crowd, Bella never cared about fitting in with the trendy, plastic girls at her Phoenix, Arizona high school. When her mother remarried and Bella chooses to live with her father in the rainy little town of Forks, Washington, she didn't expect much of anything to change. But things do change when she meets the mysterious and dazzlingly beautiful Edward Cullen. For Edward is nothing like any boy she's ever met. He's nothing like anyone she's ever met, period. He's intelligent and witty, and he seems to see straight into her soul. In no time at all, they are swept up in a passionate and decidedly unorthodox romance - unorthodox because Edward really isn't like the other boys.",
     rating: 3,
     category: "romance",
     comments: []
@@ -549,7 +549,7 @@ var videoData = [
 
 
 function seedDB(){
-
+  //
   // User.remove({}, function(err){
   //   if(err){
   //    console.log(err);
@@ -586,7 +586,6 @@ function seedDB(){
   //   console.log("------added category-----");
   //   console.log(category);
   // });
-
 
 
   // videoData.forEach(function(video){
