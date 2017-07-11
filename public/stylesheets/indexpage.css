@@ -3,10 +3,16 @@
   height: 100%;
 }
 
+.video-category-container-first{
+  height: 400px;
+  padding: 30px;
+  margin: 20px 0 20px 0;
+}
+
 .video-category-container{
   height: 400px;
   padding: 30px;
-  margin: 30px 0;
+  margin: 80px 0px 30px 0px;
 }
 
 .video-category-title{

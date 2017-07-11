@@ -16,12 +16,12 @@ class VideoIndex extends Component{
   render(){
 
     if(!this.props.video.num){
-      return <div>loading</div>;
+      return <div className="loader"></div>;
     }
 
     return(
       <div>
-        <div className="video-category-container">
+        <div className="video-category-container-first">
           <div className="video-category-title">Action</div>
           <VideoSlider video = {this.props.video.action} user={this.props.user}/>
         </div>

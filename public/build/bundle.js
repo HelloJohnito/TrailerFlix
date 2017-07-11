@@ -14932,7 +14932,7 @@ var Greeting = function (_Component) {
       });
       setTimeout(function () {
         self.props.history.push("/");
-      });
+      }, 300);
     }
   }, {
     key: 'capitalize',
@@ -16195,11 +16195,7 @@ var VideoIndex = function (_Component) {
     value: function render() {
 
       if (!this.props.video.num) {
-        return _react2.default.createElement(
-          'div',
-          null,
-          'loading'
-        );
+        return _react2.default.createElement('div', { className: 'loader' });
       }
 
       return _react2.default.createElement(
@@ -16207,7 +16203,7 @@ var VideoIndex = function (_Component) {
         null,
         _react2.default.createElement(
           'div',
-          { className: 'video-category-container' },
+          { className: 'video-category-container-first' },
           _react2.default.createElement(
             'div',
             { className: 'video-category-title' },

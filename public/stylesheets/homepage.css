@@ -58,6 +58,10 @@
   cursor: pointer;
 }
 
+.nav-loggedin a:hover{
+  text-decoration: underline;
+}
+
 .splash-outer-container-title{
   width: 500px;
   height: 80%;

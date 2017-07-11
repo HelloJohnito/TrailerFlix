@@ -35,7 +35,7 @@ class Greeting extends Component{
     });
     setTimeout(function(){
       self.props.history.push("/");
-    });
+    }, 300);
   }
 
   capitalize(name){
