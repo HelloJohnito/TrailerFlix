@@ -44,7 +44,7 @@ videoData.forEach(function(video){
 
 ### Connecting to Youtube
 
-TrailerFlix utilizes HTML5's new iframe tag to embed the youtube clip. The youtube id is pulled from the data base and set to the url.
+TrailerFlix integrates with the YouTube iFrame API to fetch and render youtube clips. The youtube id is pulled from the data base and set to the url.
 
 ```javascript
 render(){
