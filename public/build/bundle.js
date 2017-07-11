@@ -16602,7 +16602,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var root = document.getElementById('root');
   var store = (0, _store2.default)();
-  window.getState = store.getState;
+  // window.getState = store.getState;
   _reactDom2.default.render(_react2.default.createElement(_app2.default, { store: store }), root);
 });
 

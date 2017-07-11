@@ -64,3 +64,8 @@ render(){
 ### Save Favorite Movie Trailers
 
 Users are able to save their favorite movie trailers and view them at a later time.
+
+<p align="center">
+    <img src="https://media.giphy.com/media/zRRtPaFEoefHa/giphy.gif" alt="Landing Page" />
+</p>
+<!-- http://gph.is/2tFslS9 -->
