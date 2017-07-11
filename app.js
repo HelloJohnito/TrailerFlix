@@ -11,8 +11,8 @@ var passportLocalMongoose = require('passport-local-mongoose');
 var User = require('./models/user');
 
 //creates the mongodb
-// var db = process.env.DATABASEURL || "mongodb://localhost/TrailerFlix";
-var db = 'mongodb://john:password1@ds155192.mlab.com:55192/trailerflix';
+var db = process.env.DATABASEURL || "mongodb://localhost/TrailerFlix";
+
 mongoose.connect(db, function(err, res){
   if(err){
     console.log("DB Connection Failed");
