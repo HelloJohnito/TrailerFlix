@@ -38,9 +38,12 @@ class Greeting extends Component{
     });
   }
 
+  capitalize(name){
+    return name[0].toUpperCase() + name.substr(1);
+  }
 
   render(){
-    let content = (this.state.login) ? <SessionFormContainer formType="login" history={this.props.history}/> : <SessionFormContainer formType="signup" history={this.props.history}/>;
+    let content = (this.state.login) ? <SessionFormContainer formType="login"/> : <SessionFormContainer formType="signup"/>;
 
     if(!this.props.currentUser){
       return(
@@ -52,7 +55,7 @@ class Greeting extends Component{
             isOpen={this.state.modalOpen}
             onRequestClose={this.onModalClose}
             style={ModalStyleGreeting}>
-              <button className="modal-close" onClick={this.onModalClose}>X</button>
+              <button className="modal-close-session" onClick={this.onModalClose}>X</button>
               {content}
           </Modal>
         </div>
@@ -62,7 +65,7 @@ class Greeting extends Component{
       return(
         <div className="nav-loggedin flex">
           <img className="nav-user-icon" src="https://res.cloudinary.com/deh9l9lyq/image/upload/v1499474794/user-icon_g4hecp.png"></img>
-          <Link to={'/user'}>{this.props.currentUser.username}</Link>
+          <Link to={'/user'}>{this.capitalize(this.props.currentUser.username)}</Link>
           <button onClick={this.handleLogOut} className="nav-button">Log Out</button>
         </div>
       );

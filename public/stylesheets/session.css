@@ -5,6 +5,11 @@
   background: #2a2a2b;
 }
 
+.session-error-message{
+  font-size: 15px;
+  color:red;
+}
+
 .session-form{
   display: flex;
   flex-direction: column;

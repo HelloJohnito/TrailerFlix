@@ -20,7 +20,7 @@ class UserProfile extends Component {
 
 
   render(){
-    console.log(this.props.user);
+
     return(
       <div className="user-container">
         <header className="user-header flex">
@@ -31,7 +31,7 @@ class UserProfile extends Component {
         <section className="user-section">
           <ul className="video-detail-list">
             {this.props.user.favorite.map( (video, id) => (
-              <UserProfileItems key={id} videoName={video.name} videoImage={video.img}/>
+              <UserProfileItems key={id} user={this.props.user} video={video}/>
             ))}
           </ul>
         </section>
