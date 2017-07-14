@@ -63,7 +63,7 @@ render(){
 
 ### Save Favorite Movie Trailers
 
-Users are able to save their favorite movie trailers and view them in their profile page. When the User clicks 'add to favorite', an action is dispatched and the data is saved onto mongoDB. 
+Users are able to save their favorite movie trailers and view them in their profile page. When the user clicks 'add to favorite', an action is dispatched and the data is saved onto mongoDB under the User model. 
 
 <p align="center">
     <img src="https://media.giphy.com/media/zRRtPaFEoefHa/giphy.gif" alt="Landing Page" />
