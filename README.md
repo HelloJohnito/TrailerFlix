@@ -16,7 +16,7 @@ For user authentication, I incorporated the famous PassportJS. PassportJS is an 
 
 ### MongoDB
 
-TrailerFlix utilizes MongoDB, a noSQL database. To fully take advantage of the noSQL features, I created a model called 'Category' and stored all the videos separated by category for efficient retrieval of data from the database.
+TrailerFlix utilizes MongoDB, a noSQL/non-relational database. To fully take advantage of the its features, I created a model called 'Category' and stored all the videos separated by category for efficient retrieval of data from the database.
 
 Sample code below:
 
@@ -63,7 +63,7 @@ render(){
 
 ### Save Favorite Movie Trailers
 
-Users are able to save their favorite movie trailers and view them in their profile page.
+Users are able to save their favorite movie trailers and view them in their profile page. 
 
 <p align="center">
     <img src="https://media.giphy.com/media/zRRtPaFEoefHa/giphy.gif" alt="Landing Page" />
